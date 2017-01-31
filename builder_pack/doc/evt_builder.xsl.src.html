@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title>XML source view</title><link rel="stylesheet" type="text/css" href="xmlverbatim.css"></link></head><body class="xmlverb-default"><tt>
+<!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="xmlverb-default">&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e1">stylesheet</a></span><span class="xmlverb-ns-name"> xmlns:xsl</span>="<span class="xmlverb-ns-uri">http://www.w3.org/1999/XSL/Transform</span>"<span class="xmlverb-ns-name"> xmlns:xs</span>="<span class="xmlverb-ns-uri">http://www.w3.org/2001/XMLSchema</span>"<span class="xmlverb-ns-name"> xmlns:eg</span>="<span class="xmlverb-ns-uri">http://www.tei-c.org/ns/Examples</span>"<span class="xmlverb-ns-name"> xmlns:xd</span>="<span class="xmlverb-ns-uri">http://www.pnp-software.com/XSLTdoc</span>"<span class="xmlverb-ns-name"> xmlns:fn</span>="<span class="xmlverb-ns-uri">http://www.w3.org/2005/xpath-functions</span>"<span class="xmlverb-ns-name"> xmlns:tei</span>="<span class="xmlverb-ns-uri">http://www.tei-c.org/ns/1.0</span>"<span class="xmlverb-ns-name"> xmlns</span>="<span class="xmlverb-ns-uri">http://www.w3.org/1999/xhtml</span>" <span class="xmlverb-attr-name">xpath-default-namespace</span>="<span class="xmlverb-attr-content">http://www.tei-c.org/ns/1.0</span>" <span class="xmlverb-attr-name">version</span>="<span class="xmlverb-attr-content">2.0</span>" <span class="xmlverb-attr-name">exclude-result-prefixes</span>="<span class="xmlverb-attr-content">#all</span>"&gt;<span class="xmlverb-text"><br></br>
+          <br></br>
+        </span>&lt;!--<span class="xmlverb-comment">&lt;xsl:import href="modules/xml-to-string.xsl"/&gt;</span>--&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span><div class="xd">
+  	
+	&lt;<span class="xmlverb-element-nsprefix">xd</span>:<span class="xmlverb-element-name"><a name="d18e5">doc</a></span> <span class="xmlverb-attr-name">type</span>="<span class="xmlverb-attr-content">stylesheet</span>"&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-nsprefix">xd</span>:<span class="xmlverb-element-name"><a name="d18e7">author</a></span>&gt;<span class="xmlverb-text">RafMas</span>&lt;/<span class="xmlverb-element-nsprefix">xd</span>:<span class="xmlverb-element-name">author</span>&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-nsprefix">xd</span>:<span class="xmlverb-element-name"><a name="d18e10">short</a></span>&gt;<span class="xmlverb-text"><br></br>
+                        EN: Transformation from TEI P5 to HTML5<br></br>
+                        IT: Strumento di trasformazione da TEI P5 ad HTML5<br></br>
+                </span>&lt;/<span class="xmlverb-element-nsprefix">xd</span>:<span class="xmlverb-element-name">short</span>&gt;<span class="xmlverb-text"><br></br>
+                  </span>&lt;<span class="xmlverb-element-nsprefix">xd</span>:<span class="xmlverb-element-name"><a name="d18e13">detail</a></span>&gt;<span class="xmlverb-text"><br></br>
+                        EN: This is the main file to perform the transformation, it is used to include all other evt_builder-*.xsl modules                <br></br>
+                        IT: Questo è il file principale per effettuare la trasformazione, serve per includere tutti gli altri moduli evt_builder-*.xsl                <br></br>
+                  </span>&lt;/<span class="xmlverb-element-nsprefix">xd</span>:<span class="xmlverb-element-name">detail</span>&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;/<span class="xmlverb-element-nsprefix">xd</span>:<span class="xmlverb-element-name">doc</span>&gt;</div><span class="xmlverb-text"><br></br>
+<br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> Basic </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e19">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/evt_builder-main.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e21">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">../config/evt_builder-config.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+<br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e24">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/fundamental_units/evt_builder-copy_and_call_main.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e26">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/fundamental_units/evt_builder-structure.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> Image-Text link &amp; HotSpot</span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e30">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/fundamental_units/evt-builder_imagetext-link_hotspot.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+<br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> Biblio </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e34">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/elements/evt_builder-biblio.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> HTML structure </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e39">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/html_build/evt_builder-callhtml.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e41">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/html_build/evt_builder-callhtml-prefatory_matter.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e43">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/html_build/evt_builder-function.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+                <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> Elements </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e47">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/elements/evt_builder-divLine.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e49">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/elements/evt_builder-header-info.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e52">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/elements/evt_builder-ms-desc.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> Elements for diplomatic version</span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e56">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/elements/evt_builder-dipl-core.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e58">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/elements/evt_builder-dipl-multi_module.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment">&lt;xsl:include href="modules/elements/evt_builder-dipl-textstructure.xsl"/&gt;</span>--&gt;<span class="xmlverb-text"> </span>&lt;!--<span class="xmlverb-comment"> Added By JK</span>--&gt;<span class="xmlverb-text"><br></br>
+<br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> Elements for interpretative version</span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e67">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/elements/evt_builder-interp-core.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e69">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/elements/evt_builder-interp-multi_module.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment">&lt;xsl:include href="modules/elements/evt_builder-interp-textstructure.xsl"/&gt;</span>--&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> Extra </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e75">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/extra/functx-1.0.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> Generation of text label from id. </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d18e80">include</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">modules/elements/evt_builder-generate-text_label.xsl</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+</span>&lt;/<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name">stylesheet</span>&gt;<br></br>
+</div>
+</tt><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>v
+         </body></html>

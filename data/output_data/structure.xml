@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<xml xmlns="http://www.w3.org/1999/xhtml">
+   <msDesc active="1"/>
+   <headerInfo active="1"/>
+   <liste>
+      <listPerson active="1" lang="def">LIST_PERSON</listPerson>
+      <listPlace active="1" lang="def">LIST_PLACE</listPlace>
+      <listOrg active="1" lang="def">LIST_ORG</listOrg>
+   </liste>
+   <editions>
+      <edition>greek_diplomatic</edition>       <edition>greek_normalized</edition>       <edition>latin_normalized</edition>       <edition>arabic_diplomatic</edition>       <edition>arabic_normalized</edition>
+   </editions>
+   <textpage>
+      <text n="Paul_transcript_1Cor" label="1 Cor">
+         <pb n="155v">Gr-Z_0011-00379_155v</pb>
+         <pb n="156r">Gr-Z_0011-00379_156r</pb>
+      </text>
+      <text n="Paul_transcript_1Thess" label="1 Thess">
+         <pb n="246r">Gr-Z_0011-00379_246r</pb>
+      </text>
+   </textpage>
+   <pages>
+      <pair>
+         <pb n="155v">Gr-Z_0011-00379_155v</pb>
+         <pb n="156r">Gr-Z_0011-00379_156r</pb>
+      </pair>
+      <pair>
+         <pb n="246r">Gr-Z_0011-00379_246r</pb>
+      </pair>
+   </pages>
+</xml>

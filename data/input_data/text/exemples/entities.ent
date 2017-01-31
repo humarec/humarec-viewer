@@ -1,0 +1,243 @@
+<!-- ################################# -->
+<!-- lettere modificate con segni vari -->
+<!-- ################################# -->
+
+<!-- NOTA BENE: le descrizioni in maiuscolo indicano conformità alla MUFI -->
+<!-- (1): entità MUFI non (ancora) usate nel VBD -->
+<!-- controllare che le entità -macron non siano in realtà -ovlmed e -ovlhigh -->
+
+<!-- in via di definizione, NON USARE PER ADESSO!!! -->
+
+<!ENTITY amacr	"&#x0101;" > <!-- LATIN SMALL LETTER A WITH MACRON --> <!-- sostituisce atilde -->
+<!ENTITY emacr  "&#x0113;" > <!-- LATIN SMALL LETTER E WITH MACRON --> <!-- sostituisce etilde -->
+<!ENTITY imacr  "&#x012B;" > <!-- LATIN SMALL LETTER I WITH MACRON --> <!-- sostituisce itilde -->
+<!ENTITY omacr  "&#x014D;" > <!-- LATIN SMALL LETTER O WITH MACRON --> <!-- sostituisce otilde -->
+<!ENTITY umacr  "&#x016B;" > <!-- LATIN SMALL LETTER U WITH MACRON --> <!-- sostituisce utilde -->
+<!ENTITY ymacr  "&#x0233;" > <!-- LATIN SMALL LETTER Y WITH MACRON --> <!-- sostituisce ytilde -->
+
+<!ENTITY aeligmacr	"ǣ" > <!-- LATIN SMALL LETTER AE WITH MACRON --> <!-- sostituisce aeligtilde -->
+<!ENTITY bovlmed	"&#xE44D;" > <!-- LATIN SMALL LETTER B WITH MEDIUM-HIGH OVERLINE --><!-- non è &#384; (= ƀ) ? no quella è &bstrok; CHECK --> 
+<!ENTITY gins		"<orig>ᵹ</orig><reg>g</reg>" > <!-- LATIN SMALL LETTER INSULAR G --> <!-- (1) -->
+<!ENTITY Gins		"<orig>Ᵹ</orig><reg>G</reg>" > <!-- LATIN CAPITAL LETTER TURNED INSULAR G --> <!-- (1) -->
+<!ENTITY ginsmacr	"<orig>ḡ</orig><reg>g</reg>" > <!-- latin small letter insular g with macron --> <!-- sostituisce yoghtilde -->
+<!ENTITY Ginsmacr	"<orig>Ḡ</orig><reg>G</reg>Ḡ" > <!-- latin capital letter insular g with macron --> <!-- sostituisce YOGHtilde -->
+<!ENTITY lmacrhigh 	"&#xE596;" > <!-- LATIN SMALL LETTER L WITH HIGH MACRON --> <!-- sostituisce ltilde -->
+<!ENTITY mmacrmed	"m̄" > <!-- LATIN SMALL LETTER M WITH MEDIUM-HIGH MACRON --> <!-- sostituisce mtilde -->
+<!ENTITY Mmacrhigh	"<abbr><am>M̄</am></abbr><expan>M<ex>en þa leofestan</ex></expan>" > <!-- LATIN CAPITAL LETTER M WITH HIGH MACRON --> <!-- sostituisce Mtilde -->
+<!ENTITY pmacr		"&#xE665;" > <!-- LATIN SMALL LETTER P WITH MACRON --> <!-- sostituisce ptilde -->
+<!ENTITY tmacr		"t" > <!-- latin small letter t with macron --> <!-- sostituisce ttilde -->
+<!ENTITY wmacr		"&#xE757;" > <!-- LATIN SMALL LETTER W WITH MACRON --> <!-- sostituisce wtilde -->
+<!ENTITY wynnenl	"W" > <!-- latin enlarged letter small wynn -->
+<!ENTITY WYNN		"&#x01F7;" > <!-- LATIN CAPITAL LETTER WYNN -->
+<!ENTITY muncmacron	"m̃" > <!-- latin small letter uncial m with macron -->
+<!ENTITY Muncmacron	"m̃" > <!-- latin capital letter uncial m with macron -->
+<!ENTITY cmacron		'<abbr type="brev">c̃</abbr><expan>cwæþ</expan>'> <!-- latin small letter c with macron -->
+<!ENTITY cwmacron	'<abbr type="brev">cw̃</abbr><expan>cwæþ</expan>'> <!-- cw letters with macron above -->
+
+<!-- ######## -->
+
+<!ENTITY hstrok		"ħ" > 	<!-- LATIN SMALL LETTER H WITH STROKE -->
+<!ENTITY lstrok		"<abbr><am>ł</am></abbr><expan>l<ex>eofestan</ex></expan>" > 	<!-- LATIN SMALL LETTER L WITH STROKE Raf 250210 --> <!-- non lbar ƚ ? CHECK -->
+<!ENTITY pbardes	"&#61765;"> 	<!-- LATIN SMALL LETTER P WITH STROKE THROUGH DESCENDER -->
+
+<!ENTITY aacute		"&#225;" > <!-- LATIN SMALL LETTER A WITH ACUTE -->
+<!ENTITY eacute		"&#233;" > <!-- LATIN SMALL LETTER E WITH ACUTE -->
+<!ENTITY iacute		"&#237;" > <!-- LATIN SMALL LETTER I WITH ACUTE -->
+<!ENTITY oacute		"&#243;" > <!-- LATIN SMALL LETTER O WITH ACUTE -->
+<!ENTITY uacute		"&#250;" > <!-- LATIN SMALL LETTER U WITH ACUTE -->
+<!ENTITY yacute  	"&#253;" > <!-- LATIN SMALL LETTER Y WITH ACUTE -->
+
+<!ENTITY eogon 		"ę" > <!-- LATIN SMALL LETTER E WITH OGONEK -->
+
+<!ENTITY uddot		"ụ̇" > <!-- u letter with a dot above and one under -->
+<!ENTITY nddot		"ṇ̇" > <!-- n letter with a dot above and one under -->
+<!ENTITY edotbl  	"&#7865;" > <!-- LATIN SMALL LETTER E WITH DOT BELOW -->
+<!ENTITY eddot  	"ẹ̇" > <!-- e letter with a dot above and one under-->
+<!ENTITY aeligdotbl	"æ̣" > <!-- LATIN SMALL LETTER AE WITH DOT BELOW -->
+<!ENTITY aeligddot	"æ̣̇" > <!-- æ letter with a dot above and one under-->
+<!ENTITY aeligacute	"ǽ" > <!-- LATIN SMALL LETTER AE WITH ACUTE -->
+<!ENTITY ydot  		"ẏ" > <!-- LATIN SMALL LETTER Y WITH DOT ABOVE -->
+
+<!-- mantenute temporaneamente, USARE FINO A NUOVO ORDINE!!! -->
+
+<!ENTITY aeacute	"&#225;" > <!-- small ae, acute accent -->
+<!ENTITY slow		"s"> <!-- LATIN SMALL LETTER LOW S -->
+<!ENTITY aeligtilde	"æ̃" > <!-- latin small letter ae with tilde -->
+<!ENTITY btilde		"b̃" > <!-- latin small letter b with tilde -->
+<!ENTITY yoghtilde	"<abbr><am>ȝ̃</am></abbr><expan>g<ex>e</ex></expan>" > 	<!-- latin small letter yogh with tilde Raf 200210 -->
+<!ENTITY YOGHtilde " Ȝ̃" > <!-- latin capital letter yogh with tilde -->
+<!ENTITY ltilde 	"l̃" > <!-- latin small letter l with tilde -->
+<!ENTITY mtilde		"m̃" > <!-- latin small letter m with tilde -->
+<!ENTITY Mtilde		"M" > <!-- latin capital letter m with tilde -->
+<!ENTITY ptilde		"p" > <!-- latin small letter p with tilde -->
+<!ENTITY ttilde		"t̃" > <!-- latin small letter t with tilde -->   
+<!ENTITY wtilde		"w̃" > <!-- latin small letter w with tilde -->
+<!ENTITY munctilde	"m̃" > <!-- latin small letter uncial m with tilde -->
+<!ENTITY Munctilde	"m̃" > <!-- latin capital letter uncial m with tilde -->
+<!ENTITY ctilde		'<abbr type="brev">c̃</abbr><expan>cwæþ</expan>'> <!-- LATIN SMALL LETTER C WITH TILDE -->
+<!ENTITY cwtilde	'<abbr type="brev">cw̃</abbr><expan>cwæþ</expan>'> <!-- cw letters with tilde above -->
+
+<!-- ######## -->
+<!-- varianti -->
+<!-- ######## -->
+
+<!ENTITY oclig		"a" > <!-- LATIN SMALL LIGATURE OC -->
+
+<!ENTITY sins		"&#61735;"> <!-- LATIN SMALL LETTER LOW S -->
+<!ENTITY slong		"ſ"> <!-- LATIN SMALL LETTER LONG S -->
+
+<!ENTITY aenl		"a" > <!-- LATIN ENLARGED LETTER SMALL A -->
+<!ENTITY aenlacute	"á" > <!-- LATIN ENLARGED LETTER SMALL A WITH ACUTE -->
+<!ENTITY eenl		"<orig>e</orig><reg>e</reg>" > <!-- LATIN ENLARGED LETTER SMALL E  -->
+<!ENTITY eenlacute	"é" > <!-- latin enlarged letter small e with acute -->
+<!ENTITY inodotenl	"<orig>&#61181;</orig><reg>i</reg>" > <!-- LATIN ENLARGED LETTER SMALL DOTLESS I  -->
+<!ENTITY ethenl		"<orig>&#61157;</orig><reg>ð</reg>" > <!-- LATIN ENLARGED LETTER SMALL ETH  --><!-- il carattere MUFI non sembra appropriato -->
+<!ENTITY thornenl	"<orig>&#61174;</orig><reg>þ</reg>" > <!-- LATIN ENLARGED LETTER SMALL THORN  -->
+
+<!ENTITY curly		"y" > <!-- y letter with rounded upper arms and stroke --> <!-- v. Junicode U+F233 -->
+<!ENTITY curlyacute	"ý" > <!-- y letter with rounded upper arms and stroke and acute accent -->
+<!ENTITY curlydot 	"ẏ" > <!-- y letter with rounded upper arms and stroke and dot above -->
+<!ENTITY curlytilde	"ỹ" > <!-- y letter with rounded upper arms and stroke and tilde -->
+<!ENTITY windy		"y" > <!-- y letter with rounded upper arms turned right -->
+<!ENTITY windyacute	"y" > <!-- y letter with rounded upper arms turned right and acute accent -->
+
+<!ENTITY Csqu 		"C" > <!-- LATIN CAPITAL LETTER C SQUARE FORM -->
+<!ENTITY escap 		"e" > <!-- LATIN LETTER SMALL CAPITAL E -->
+<!ENTITY Eunc 		"E" > <!-- LATIN CAPITAL LETTER E UNCIAL FORM -->
+<!ENTITY Gins 		"G" > <!-- LATIN CAPITAL LETTER INSULAR G -->
+<!ENTITY Grust 		"G" > <!-- latin capital letter g rustic form -->
+<!ENTITY Gsqu 		"G" > <!-- LATIN CAPITAL LETTER G SQUARE FORM --> <!-- v. Junicode U+F10E -->
+<!ENTITY hunc 		"h" > <!-- LATIN SMALL LETTER UNCIAL H --><!-- cambiare hunc in hrdes come per MUFI 3.0 -->
+<!ENTITY hrdes 		"h" > <!-- LATIN SMALL LETTER H WITH RIGHT DESCENDER -->
+<!ENTITY Hunc 		"H" > <!-- LATIN CAPITAL LETTER UNCIAL H -->
+<!ENTITY kunc 		"h" > <!-- LATIN SMALL LETTER UNCIAL K -->
+<!ENTITY munc 		"m" > <!-- LATIN SMALL LETTER UNCIAL M -->
+<!ENTITY muncdes	"m" > <!-- LATIN SMALL LETTER UNCIAL M WITH DESCENDER -->
+<!ENTITY Munc 		"M" > <!-- LATIN CAPITAL LETTER UNCIAL M -->
+<!ENTITY Muncdes	"M" > <!-- LATIN CAPITAL LETTER UNCIAL M WITH DESCENDER -->
+<!ENTITY Nldes		"N" > <!-- latin capital letter N with left descender -->
+
+
+<!-- ############################# -->
+<!-- segni di punteggiatura, spazi -->
+<!-- ############################# -->
+
+<!ENTITY cross		"+" > <!-- cross shaped sign -->
+<!ENTITY middot		"&#183;" > <!-- MIDDLE DOT -->
+<!ENTITY punctelev	"&#61793;" > <!-- PUNCTUS ELEVATUS -->
+<!ENTITY punctelevdiag	"&#61936;" > <!-- PUNCTUS ELEVATUS DIAGONAL STROKE -->
+<!ENTITY punctmet	"." > <!-- "metrical" dot -->
+<!ENTITY expdot		"<c type='dipl'>.</c>" > <!-- expunction dot -->
+
+<!-- necessaria solo se scopriamo un uso diverso della virgola -->
+<!ENTITY addcom		"<c type='dipl'>,</c>" > <!-- addition sign -->
+<!ENTITY delcom 	"<c type='dipl'>̦</c>" > <!-- expunction sign under a single character -->
+
+<!ENTITY colmidcomposit "&#61925;" > <!-- COLON WITH MIDDLE COMMA POSITURA -->
+<!ENTITY midcom		"." > <!-- middle comma -->
+
+<!ENTITY ms		"<sic></sic>"> <!-- missing space between words -->
+<!ENTITY ss		"<sic> </sic>"> <!-- supplementary space between words -->
+
+
+<!-- ############# -->
+<!-- abbreviazioni -->
+<!-- ############# -->
+
+<!-- mantenute temporaneamente, USARE FINO A NUOVO ORDINE!!! -->
+
+<!ENTITY atilde	'<abbr><am>ã</am></abbr><expan>a<ex>m</ex></expan>' > <!-- LATIN SMALL LETTER A WITH TILDE Raf 250210 -->   
+<!ENTITY etilde	'<abbr>ẽ</abbr><expan>e<ex>n</ex></expan>' > <!-- LATIN SMALL LETTER E WITH TILDE -->
+<!ENTITY itilde	'<abbr><am>ĩ</am></abbr><expan>i<ex>m</ex></expan>' > <!-- LATIN SMALL LETTER I WITH TILDE Raf 250210 -->   
+<!ENTITY otilde	'<abbr>õ</abbr><expan>o<ex>n</ex></expan>' > <!-- LATIN SMALL LETTER O WITH TILDE -->
+<!ENTITY rtilde	'<abbr>r̃</abbr><expan>est</expan><seg type="nodipl">r</seg>'> <!-- LATIN SMALL LETTER R WITH TILDE -->
+<!ENTITY utilde	'<abbr><am>ũ</am></abbr><expan>u<ex>m</ex></expan>'> <!-- LATIN SMALL LETTER U WITH TILDE Raf 250210 -->   
+<!ENTITY ytilde	'<abbr><am>ỹ</am></abbr><expan>y<ex>m</ex></expan>'> <!-- LATIN SMALL LETTER Y WITH TILDE -->   
+
+<!ENTITY tflour	'<abbr>t͗</abbr><expan>t<ex>us</ex></expan>' > <!-- latin small letter t with half-ring above -->
+
+
+<!-- ###### -->
+<!-- brevigrafi -->
+<!-- ###### -->
+
+<!ENTITY dni 		'<abbr type="brev">dñi</abbr><expan>domini</expan>'> <!-- -->
+<!ENTITY dnm 		'<abbr type="brev">dñm</abbr><expan>dominum</expan>'> <!-- -->
+<!ENTITY dno 		'<abbr type="brev">dño</abbr><expan>domino</expan>'> <!-- -->
+<!ENTITY ds 		'<abbr type="brev">ds</abbr><expan>deus</expan>'> <!-- -->
+<!ENTITY et		'<abbr type="brev">ond </abbr><expan>and</expan>'> <!-- LATIN ABBREVIATION SIGN SMALL ET -->
+<!ENTITY etlat		'<abbr type="brev">⁊</abbr><expan>et</expan>'> <!-- Tironian note for lat. 'et' -->
+<!ENTITY etpref		'<abbr type="brev">⁊</abbr><expan>and</expan>'> <!-- Tironian note as prefix -->
+<!ENTITY geard		'<abbr type="brev">ȝ̃</abbr><expan>geard</expan>'>
+<!ENTITY munctilde 	'<abbr type="brev">m̃</abbr><expan>man</expan>' > 	<!-- LATIN SMALL LETTER UNCIAL M -->
+<!ENTITY sca		'<abbr type="brev">sc̃a</abbr><expan>sancta</expan>'> <!-- -->
+<!ENTITY sce		'<abbr type="brev">sc̃e</abbr><expan>sancte</expan>'> <!-- -->
+<!ENTITY scs		'<abbr type="brev">sc̃s</abbr><expan>sanctus</expan>' > <!--  -->
+<!ENTITY thon		'<abbr type="brev">þõn</abbr><expan>þon<ex>ne</ex></expan>' > <!--  -->
+<!ENTITY thornbarslash 	'<abbr type="brev">&#61769;</abbr><expan>þæt</expan>' > <!-- LATIN SMALL LETTER THORN WITH DIAGONAL STROKE -->
+
+
+<!-- #### -->
+<!-- Rune -->
+<!-- #### -->
+
+<!ENTITY feoh	"&#x16A0;" > <!-- RUNIC LETTER FEHU FEOH FE F -->
+<!ENTITY ur		"&#x16A2;" > <!-- RUNIC LETTER URUZ UR U -->
+<!ENTITY cen	"&#x16B3;" > <!-- RUNIC LETTER CEN -->
+<!ENTITY wyn	"&#x16B9;" > <!-- RUNIC LETTER WUNJO WYNN W -->
+<!ENTITY nyd	"&#x16BE;" > <!-- RUNIC LETTER NAUDIZ NYD NAUD N -->
+<!ENTITY eoh	"&#x16D6;" > <!-- RUNIC LETTER EHWAZ EH E -->
+<!ENTITY man	"&#x16D7;" > <!-- RUNIC LETTER MANNAZ MAN M -->
+<!ENTITY yr		"&#x16A3;" > <!-- RUNIC LETTER YR -->
+<!ENTITY lagu	"&#x16DA;" > <!-- RUNIC LETTER LAUKAZ LAGU LOGR -->
+
+
+<!-- ### -->
+<!-- Raf -->
+<!-- ### -->
+
+<!ENTITY midpunct	'' > <!-- Metrical middle punct symbol -->
+<!ENTITY ontilde	'<abbr><am>on</am></abbr><expan>on<ex>ne</ex></expan>'> <!-- Latin small letters o and n with tilde Raf 250210 -->
+<!ENTITY aenldot	'' > <!-- Latin enlarged small letter a with a dot above -->
+<!ENTITY dddot		''> <!-- Latin small letter d with a dot above and a dot below -->
+<!ENTITY addpunct	''> <!-- addiction sign -->
+<!ENTITY dne		'<abbr><am>dne</am></abbr><expan>d<ex>omi</ex>ne</expan>'> <!--  -->
+<!ENTITY dotilde	'<abbr><am>o</am></abbr><expan>d<ex>omino</ex></expan>'> <!--  -->
+<!ENTITY quo		'<abbr><am>quo</am></abbr><expan>quo<ex>niam</ex></expan>'> <!--  -->
+<!ENTITY di		'<abbr><am>di</am></abbr><expan>d<ex>e</ex>i</expan>'> <!--  -->
+<!ENTITY ydotacute	'' > <!--  -->
+<!ENTITY do		'<abbr><am>do</am></abbr><expan>d<ex>e</ex>o</expan>'> <!--  -->
+<!ENTITY dblstrok	'' > <!-- double latin small letter with stroke -->
+<!ENTITY ne		'' > <!-- ligature of latin capital letters n and e -->
+<!ENTITY ar		'' > <!-- ligature of latin capital letters a and r -->
+<!ENTITY SCA		'<abbr><am>SCA</am></abbr><expan>S<ex>AN</ex>C<ex>T</ex>A</expan>' > <!-- -->
+<!ENTITY dtilde		'' > <!-- latin small letter d with tilde -->
+<!ENTITY lstroklat	'' > <!-- latin small letter l with stroke -->
+<!ENTITY MElig		''> <!-- capital m and e letter in ligature VB 85v -->
+<!ENTITY DNI		'<abbr><am>DNI</am></abbr><expan>D<ex>OMI</ex>NI</expan>'> <!--  -->
+<!ENTITY ihs		'<abbr><am>ihs</am></abbr><expan>i<ex>esu</ex>s</expan>'> <!--  -->
+<!ENTITY etildelat	'<abbr><am>e</am></abbr><expan>e<ex>m</ex></expan>'> <!--  -->
+<!ENTITY iohtilde	'<abbr><am>ioh</am></abbr><expan>ioh<ex>annem</ex></expan>'> <!--  -->
+<!ENTITY hcurl		'<abbr><am>h</am></abbr><expan><ex>autem</ex></expan>' > <!--  -->
+<!ENTITY pcurl		'<abbr><am>p</am></abbr><expan>p<ex>ro</ex></expan>' ><!--  -->
+<!ENTITY atildelat 'ã' > <!-- LATIN SMALL LETTER A WITH TILDE -->
+<!ENTITY otildelat 'õ' > <!-- LATIN SMALL LETTER O WITH TILDE -->
+<!ENTITY NFligmacr '<abbr type="susp">NF</abbr><expan>nf<ex>essore</ex></expan>' > <!-- --> 
+<!ENTITY SCO  '<abbr><am>SCO</am></abbr><expan>S<ex>AN</ex>C<ex>T</ex>O</expan>' > <!-- -->
+<!ENTITY nsi '<abbr><am>nsi</am></abbr><expan>n<ex>o</ex>s<ex>tr</ex>i</expan>' > <!-- Raf folio 54v -->
+<!ENTITY thook '<abbr><am>t</am></abbr><expan>t<ex>us</ex></expan>'> <!-- Raf folio 5v --> 
+<!ENTITY urtilde '<abbr><am>ur</am></abbr><expan>u<ex>este</ex>r</expan>'> <!-- Raf folio 6v -->
+<!ENTITY mhook '<abbr><am>m</am></abbr><expan>m<ex>us</ex></expan>'> <!-- Raf folio 8v -->
+
+
+
+<!-- #### -->
+<!-- Roby -->
+<!-- #### -->
+
+<!ENTITY ETH		'Ð' > <!-- LATIN CAPITAL LETTER ETH -->
+<!ENTITY ETHbarslash	'' > <!-- Latin capital letter eth with diagonal slash -->
+<!ENTITY ET		'<abbr type="brev"></abbr><expan>And</expan>'> <!-- LATIN ABBREVIATION SIGN CAPITAL ET -->
+<!ENTITY eet	"eët" > <!-- v. 4r13 -->
+<!ENTITY macute	"m" > <!-- v. 130r17 -->
+

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns='http://www.tei-c.org/ns/1.0'>
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type='main'>test</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>tranScriptorium</publisher>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl><publisher>TRP document creator: sara.schulthess@sib.swiss</publisher></bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<facsimile xml:id='facs'>
+		<surface xml:id='facs_1' corresp="#Gr-Z_0011-00379_155v">
+			<graphic height="4088px" width="3525px" url="Gr-Z_0011-00379_155v"/>
+			<zone lrx = "1824" lry = "2979" ulx = "1150" uly = "2816" rend = "visible" rendition="Line" xml:id='facs_1_region_1481030476384_4' corresp="#lb_facs_1_1"/>
+		</surface>
+	</facsimile>
+	<text  n = "Paul" xml:id = "Transcript_Paul" >
+		<body>
+			
+				
+				
+				<pb n="155v" xml:id="Gr-Z_0011-00379_155v"/>
+				<l n="1"><lb facs="#facs_1_region_1481030476384_4" xml:id="lb_facs_1_1"/>bla bla bla</l>
+				
+			
+		</body>
+	</text>
+</TEI>

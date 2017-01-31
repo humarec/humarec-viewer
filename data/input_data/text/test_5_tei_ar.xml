@@ -1,0 +1,456 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Humarec Manuscript Viewer - Marciana Gr. Z. 11 (379)</title>
+				<respStmt>
+					<resp>Transcription and TEI encoding</resp>
+
+					<name>Sara Schulthess</name>
+				</respStmt>
+				<respStmt>
+					<resp>Development of the Manuscript Viewer</resp>
+					<name>Sara Schulthess</name>
+					<name>Martial Sankar</name>
+					<name>Anastasia Chasapi</name>
+				</respStmt>
+				<respStmt>
+					<resp>Director of the project</resp>
+					<name>Claire Clivaz</name>
+					
+					
+				</respStmt>
+				<respStmt>
+					<resp>Visualization Tool</resp>
+					<name>EVT</name>
+				</respStmt>
+			</titleStmt>
+
+			<publicationStmt>
+				<authority>Humarec Vital-DH@Vital-IT project</authority>
+				<date>2016</date>
+				<availability status="unknown">
+					<p>Visit the Humarec Homage for more information.</p>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<country>Italy</country>
+						<settlement>Venice</settlement>
+						<repository>Marciana Library</repository>
+						<idno>Z. 11 (379)</idno>
+						<msName>Marciana Gr. Z 11 (379)</msName>
+					</msIdentifier>
+					<msContents>
+						<summary>
+							
+							Marciana Gr. Z 11 (379) contains the Acts, the Catholic letters and the letters of Paul in Greek, Latin and Arabic. This is the only trilingual Greek, Latin and Arabic manuscriptin the GA list. The manuscript is not dated but was estimated to the 12th or 13th century. It comes probably from Sicily.
+						
+						</summary>
+						<msItem>
+							<locus from="1r" to="82r">1r-82r</locus>
+							<title>Acts</title>
+						</msItem>
+						<msItem>
+							<locus from="82v" to="124v">82v-124v</locus>
+							<title>Catholic Letters</title>
+							<note>Argumenta and tabula capitum precede each letter.</note>
+							
+						</msItem>
+						
+						<msItem><locus from="82v" to="92r">82v-92r</locus>
+						<title>James</title>
+						</msItem>
+						<msItem><locus from="92r" to="101r">92r-101r</locus>
+						<title>1 Peter</title></msItem>
+						<msItem><locus from="101v" to="108r">101v-108r</locus>
+						<title>2 Peter</title></msItem>
+						<msItem><locus from="108v" to="117r">108v-117r</locus>
+							<title>1 John</title></msItem>
+						<msItem><locus from="117r" to="118v">117r-118v</locus>
+						<title>2 John</title></msItem>
+						<msItem><locus from="118v" to="120r">118v-120r</locus>
+						<title>3 John</title></msItem>
+						<msItem><locus from="120v" to="125r">120v-125r</locus>
+						<title>Jude</title></msItem>
+
+						
+						<msItem>
+							<locus from="125r" to="302v">125r-302v</locus>
+							<title>Letters of Paul</title>
+							<note>With the exception of 1 Corinthians, argumenta and tabula capitum precede each letter.</note>
+						</msItem>
+						
+							
+							
+							<msItem><locus from="125" to="155v">125-155v</locus>
+						<title>Romans</title></msItem>
+							<msItem><locus from="155v" to="185r">155v-185r</locus>
+						<title>1 Corinthians</title></msItem>
+							<msItem><locus from="187r" to="205v">	187r-205v</locus>
+								<title>2 Corinthians</title></msItem>
+							<msItem><locus from="207v" to="216v">	207v-216v</locus>
+						<title>Galatians</title></msItem>
+						<msItem>	<locus from="218r" to="228r">218r-228r</locus>
+						<title>Ephesians</title></msItem>
+							<msItem><locus from="229r" to="236r">229r-236r</locus>
+						<title>Philippians</title></msItem>
+							<msItem><locus from="237v" to="244r">237v-244r</locus>
+						<title>Colossians</title></msItem>
+							<msItem><locus from="245v" to="251v">245v-251v</locus>
+						<title>1 Thessalonians</title></msItem>
+							<msItem><locus from="253r" to="256v">253r-256v</locus>
+								<title>2 Thessalonians</title></msItem>
+							<msItem><locus from="260r" to="282r">260r-282r</locus>
+						<title>Hebrews</title></msItem>
+						<msItem>	<locus from="284r" to="291r">284r-291r</locus>
+						<title>1 Timothy</title></msItem>
+							<msItem><locus from="293r" to="298r">293r-298r</locus>
+						<title>2 Timothy</title></msItem>
+							<msItem><locus from="299v" to="302r">299v-302r</locus>
+						<title>Titus</title></msItem>
+							<msItem><locus from="302v" to="302v">302v</locus>
+							<title>Philemon</title>
+</msItem>							
+						<msItem><locus from="303r" to="304v">303r-304v</locus>
+							<title>empty folios</title></msItem>	
+												
+					
+
+					</msContents>
+					<physDesc>
+						<objectDesc form="codex">
+							<supportDesc material="parchment">
+			
+								<extent>304 folios<dimensions scope="all" type="leaf" unit="cm">
+									<height>28 cm</height>
+									<width>23.5 cm</width>
+								</dimensions>
+								</extent>
+			</supportDesc>
+				</objectDesc></physDesc></msDesc>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<facsimile xml:id="facs_1">
+
+		<!--	<surface ulx="0" uly="0" lrx="4088" lry="3525" corresp="#Gr-Z_0011-00379_155v">
+			<graphic height="4088px" width="3525px" url="Gr-Z_0011-00379_155v.jpg"/>
+
+			<zone lrx="1824" lry="2979" ulx="1150" uly="2816" rendition="Line"
+				xml:id="facs_1_line_1481101770874_24" corresp="#Gr-Z_0011-00379_155v_l24"/>
+
+		</surface >
+-->
+		<surface corresp="#Gr-Z_0011-00379_155v">
+			<graphic
+				url="..\..\..\..\Applications\MAMP\htdocs\Humarec_viewer\data\input_data\images\single\Gr-Z_0011-00379_155v.jpg"
+				width="3525px" height="4088px"/>
+
+			<zone xml:id="Gr-Z_0011-00379_155v_ar_line_23" rendition="Line" ulx="2622" uly="2736"
+				lrx="3315" lry="2864" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_155v_ar_line_24" rendition="Line" ulx="2672" uly="2844"
+				lrx="3317" lry="2958" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_155v_ar_line_25" rendition="Line" ulx="2632" uly="2932"
+				lrx="3325" lry="3060" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_155v_ar_line_26" rendition="Line" ulx="2662" uly="3056"
+				lrx="3321" lry="3162" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_155v_ar_line_27" rendition="Line" ulx="2848" uly="3142"
+				lrx="3327" lry="3264" rend="visible"/>
+		</surface>
+		<surface corresp="#Gr-Z_0011-00379_156r">
+			<graphic
+				url="..\..\..\..\Applications\MAMP\htdocs\Humarec_viewer\data\input_data\images\single\Gr-Z_0011-00379_156r.jpg"
+				width="3750px" height="4542px"/>
+
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_1" rendition="Line" ulx="1946" uly="672"
+				lrx="2570" lry="782" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_2" rendition="Line" ulx="1884" uly="770"
+				lrx="2576" lry="898" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_3" rendition="Line" ulx="1902" uly="874"
+				lrx="2580" lry="996" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_4" rendition="Line" ulx="1996" uly="976"
+				lrx="2574" lry="1094" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_5" rendition="Line" ulx="1872" uly="1070"
+				lrx="2574" lry="1198" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_6" rendition="Line" ulx="2190" uly="1180"
+				lrx="2580" lry="1286" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_7" rendition="Line" ulx="1884" uly="1270"
+				lrx="2572" lry="1398" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_8" rendition="Line" ulx="1900" uly="1390"
+				lrx="2574" lry="1512" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_9" rendition="Line" ulx="1934" uly="1492"
+				lrx="2574" lry="1618" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_10" rendition="Line" ulx="1956" uly="1596"
+				lrx="2578" lry="1712" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_11" rendition="Line" ulx="1914" uly="1706"
+				lrx="2580" lry="1818" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_12" rendition="Line" ulx="1878" uly="1806"
+				lrx="2576" lry="1922" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_13" rendition="Line" ulx="1876" uly="1906"
+				lrx="2636" lry="2034" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_14" rendition="Line" ulx="1864" uly="2026"
+				lrx="2598" lry="2130" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_15" rendition="Line" ulx="1950" uly="2116"
+				lrx="2590" lry="2244" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_16" rendition="Line" ulx="1868" uly="2216"
+				lrx="2598" lry="2330" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_17" rendition="Line" ulx="2142" uly="2312"
+				lrx="2592" lry="2440" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_18" rendition="Line" ulx="2178" uly="2414"
+				lrx="2578" lry="2524" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_19" rendition="Line" ulx="2170" uly="2530"
+				lrx="2574" lry="2658" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_20" rendition="Line" ulx="2084" uly="2638"
+				lrx="2584" lry="2748" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_21" rendition="Line" ulx="2024" uly="2722"
+				lrx="2576" lry="2850" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_22" rendition="Line" ulx="2110" uly="2838"
+				lrx="2650" lry="2956" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_23" rendition="Line" ulx="2052" uly="2946"
+				lrx="2574" lry="3052" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_24" rendition="Line" ulx="1976" uly="3042"
+				lrx="2564" lry="3160" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_25" rendition="Line" ulx="2012" uly="3154"
+				lrx="2572" lry="3252" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_26" rendition="Line" ulx="2176" uly="3250"
+				lrx="2550" lry="3348" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_27" rendition="Line" ulx="1984" uly="3348"
+				lrx="2562" lry="3476" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_156r_ar_line_28" rendition="Line" ulx="2056" uly="3462"
+				lrx="2574" lry="3580" rend="visible"/>
+
+		</surface>
+		<surface corresp="#Gr-Z_0011-00379_246r">
+			<graphic url="..\Marciana Gr. Z. 11\Gr-Z_0011-00379_246r.jpg" width="3750px"
+				height="4542px"/>
+
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_1" rendition="Line" ulx="2032" uly="760"
+				lrx="2676" lry="888" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_2" rendition="Line" ulx="2030" uly="876"
+				lrx="2672" lry="992" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_3" rendition="Line" ulx="2043" uly="964"
+				lrx="2682" lry="1098" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_4" rendition="Line" ulx="1909" uly="1082"
+				lrx="2681" lry="1214" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_5" rendition="Line" ulx="1923" uly="1190"
+				lrx="2658" lry="1298" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_6" rendition="Line" ulx="2060" uly="1300"
+				lrx="2664" lry="1416" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_7" rendition="Line" ulx="2190" uly="1374"
+				lrx="2656" lry="1492" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_8" rendition="Line" ulx="2238" uly="1486"
+				lrx="2648" lry="1592" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_9" rendition="Line" ulx="2166" uly="1574"
+				lrx="2626" lry="1692" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_10" rendition="Line" ulx="2076" uly="1684"
+				lrx="2634" lry="1798" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_11" rendition="Line" ulx="2156" uly="1794"
+				lrx="2648" lry="1920" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_12" rendition="Line" ulx="2190" uly="1914"
+				lrx="2636" lry="2016" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_13" rendition="Line" ulx="1889" uly="1960"
+				lrx="2622" lry="2122" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_14" rendition="Line" ulx="1990" uly="2104"
+				lrx="2610" lry="2228" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_15" rendition="Line" ulx="2066" uly="2206"
+				lrx="2602" lry="2310" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_16" rendition="Line" ulx="1923" uly="2304"
+				lrx="2634" lry="2412" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_17" rendition="Line" ulx="2092" uly="2398"
+				lrx="2600" lry="2510" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_18" rendition="Line" ulx="2074" uly="2502"
+				lrx="2652" lry="2610" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_19" rendition="Line" ulx="2268" uly="2592"
+				lrx="2646" lry="2726" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_20" rendition="Line" ulx="1988" uly="2670"
+				lrx="2632" lry="2794" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_21" rendition="Line" ulx="2086" uly="2780"
+				lrx="2622" lry="2882" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_22" rendition="Line" ulx="2110" uly="2888"
+				lrx="2670" lry="3020" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_23" rendition="Line" ulx="2174" uly="2992"
+				lrx="2624" lry="3098" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_24" rendition="Line" ulx="2042" uly="3092"
+				lrx="2624" lry="3202" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_25" rendition="Line" ulx="2028" uly="3172"
+				lrx="2624" lry="3304" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_26" rendition="Line" ulx="1948" uly="3270"
+				lrx="2614" lry="3414" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_27" rendition="Line" ulx="1896" uly="3400"
+				lrx="2616" lry="3506" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_28" rendition="Line" ulx="1976" uly="3480"
+				lrx="2616" lry="3606" rend="visible"/>
+			<zone xml:id="Gr-Z_0011-00379_246r_ar_line_29" rendition="Line" ulx="826" uly="3618"
+				lrx="1052" lry="3698" rend="visible"/>
+		</surface>
+
+	</facsimile>
+	<text xml:lang="ar" xml:id="Paul_transcript" n="Paul">
+		<group>
+			<text rend="ar" xml:id="Paul_transcript_1Cor" n="1 Cor">
+				<body>
+					<pb xml:id="Gr-Z_0011-00379_155v" facs="#Gr-Z_0011-00379_155v" n="155v"/>
+					<p rend="rtl">
+						<lb facs="#Gr-Z_0011-00379_155v_ar_line_23" n="23" xml:id="Gr-Z_0011-00379_155v_ar_lb_23"/>
+						<hi rend="red">و هذه رِسَاله بولس الحواري</hi>
+						<lb facs="#Gr-Z_0011-00379_155v_ar_line_24" n="24" xml:id="Gr-Z_0011-00379_155v_ar_lb_24"/>
+						<hi rend="red">الاولى الي اهل قرنثه</hi>
+						<lb facs="#Gr-Z_0011-00379_155v_ar_line_25" n="25" xml:id="Gr-Z_0011-00379_155v_ar_lb_25"/>
+						<milestone unit="verse" n="1:1"/>من بولس الرسول المُدعَى حواري
+						<lb facs="#Gr-Z_0011-00379_155v_ar_line_26" n="26" xml:id="Gr-Z_0011-00379_155v_ar_lb_26"/>
+						بيسوع المسيح باردة الله <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_155v_ar_line_27" n="27" xml:id="Gr-Z_0011-00379_155v_ar_lb_27"/>
+						و من سُستان الاخ </p>
+
+					<pb xml:id="Gr-Z_0011-00379_156r" facs="#Gr-Z_0011-00379_156r" n="156r"/>
+					<p>
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_1" n="1" xml:id="Gr-Z_0011-00379_156r_ar_lb_1"/>
+						<milestone unit="verse" n="1:2"/> بيعه اللّه التى بقورنثه <hi rend="red"
+							>//</hi>
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_2" n="2" xml:id="Gr-Z_0011-00379_156r_ar_lb_2"/>
+						الي المقدّسين بيسوع المسيح <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_3" n="3" xml:id="Gr-Z_0011-00379_156r_ar_lb_3"/>
+						المدعون مقدّسُون <hi rend="red">//</hi> مع جميع
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_4" n="4" xml:id="Gr-Z_0011-00379_156r_ar_lb_4"/>
+						الّذين يدعون اسم ربنا
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_5" n="5" xml:id="Gr-Z_0011-00379_156r_ar_lb_5"/>
+						يسوع المسيح <hi rend="red">//</hi> فى جميع مواضعهم
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_6" n="6" xml:id="Gr-Z_0011-00379_156r_ar_lb_6"/>
+						و مواضعنا <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_7" n="7" xml:id="Gr-Z_0011-00379_156r_ar_lb_7"/>
+						<milestone unit="verse" n="1:3"/> لكم الامتنان و السّلم اللّه
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_8" n="8" xml:id="Gr-Z_0011-00379_156r_ar_lb_8"/>
+						ابينا و الرب يسوع المسيح <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_9" n="9" xml:id="Gr-Z_0011-00379_156r_ar_lb_9"/>
+						<milestone unit="verse" n="1:4"/> امّا بعد فانى اشكر اللّه إلهى
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_10" n="10" xml:id="Gr-Z_0011-00379_156r_ar_lb_10"/>
+						دابًا ابرًا عنكم <hi rend="red">//</hi> بامتناں
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_11" n="11" xml:id="Gr-Z_0011-00379_156r_ar_lb_11"/>
+						اللّه الذي وهبه لكم بيسوع
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_12" n="12" xml:id="Gr-Z_0011-00379_156r_ar_lb_12"/>
+						المسيح <hi rend="red">//</hi>
+						<milestone unit="verse" n="1:5"/> انكم صرتم اغنيا اوفارًا <lb facs="#Gr-Z_0011-00379_156r_ar_line_13" n="13" xml:id="Gr-Z_0011-00379_156r_ar_lb_13"/>
+						<choice>
+							<orig>ڡى</orig>
+							<reg>فى</reg>
+						</choice> الجميع على يديه و به <hi rend="red">//</hi> و فى كل
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_14" n="14" xml:id="Gr-Z_0011-00379_156r_ar_lb_14"/>
+						مقالهٍ و كل حكمه <hi rend="red">//</hi>
+						<milestone unit="verse" n="1:6"/> كما ثبتت
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_15" n="15" xml:id="Gr-Z_0011-00379_156r_ar_lb_15"/>
+						شهاده المسيح فيكم <hi rend="red">//</hi>
+						<milestone unit="verse" n="1:7"/> حتى
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_16" n="16" xml:id="Gr-Z_0011-00379_156r_ar_lb_16"/>
+						اضبحتم لا <choice>
+							<orig>يعجركم</orig>
+							<reg>يعجزكم</reg>
+						</choice> من امتنان
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_17" n="17" xml:id="Gr-Z_0011-00379_156r_ar_lb_17"/>
+						شي <hi rend="red">//</hi> و تنتظرون
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_18" n="18" xml:id="Gr-Z_0011-00379_156r_ar_lb_18"/>
+						انكشاف ربنا
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_19" n="19" xml:id="Gr-Z_0011-00379_156r_ar_lb_19"/>
+						يسوع المسيح <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_20" n="20" xml:id="Gr-Z_0011-00379_156r_ar_lb_20"/>
+						<milestone unit="verse" n="1:8"/> الذي يثبتكم الي الا
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_21" n="21" xml:id="Gr-Z_0011-00379_156r_ar_lb_21"/>
+						نقضا بغير ملامه <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_22" n="22" xml:id="Gr-Z_0011-00379_156r_ar_lb_22"/>
+						<choice>
+							<orig>ڡى</orig>
+							<reg>فى</reg>
+						</choice> يوم ربنا يسوع
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_23" n="23" xml:id="Gr-Z_0011-00379_156r_ar_lb_23"/>
+						المسيح <hi rend="red">//</hi>
+						<milestone unit="verse" n="1:9"/> صَادق
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_24" n="24" xml:id="Gr-Z_0011-00379_156r_ar_lb_24"/>
+						اللّه الذي دعَاكم الي
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_25" n="25" xml:id="Gr-Z_0011-00379_156r_ar_lb_25"/>
+						مُصاحبه ولده يسوع
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_26" n="26" xml:id="Gr-Z_0011-00379_156r_ar_lb_26"/>
+						المسيح ربنا <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_27" n="27" xml:id="Gr-Z_0011-00379_156r_ar_lb_27"/>
+						<milestone unit="verse" n="1:10"/> و انا اسلكم يا معشر
+						<lb facs="#Gr-Z_0011-00379_156r_ar_line_28" n="28" xml:id="Gr-Z_0011-00379_156r_ar_lb_28"/>
+						اخوتي <hi rend="red">//</hi> بحق اسم </p>
+				</body>
+
+			</text>
+			<text rend="ar" xml:id="Paul_transcript_1Thess" n="1 Thess">
+				<body>
+					<pb xml:id="Gr-Z_0011-00379_246r" n="246r"/>
+					<p>
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_1" n="1" xml:id="Gr-Z_0011-00379_246r_ar_lb_1"/><milestone
+							unit="verse" n="1:1"/> من بولس و سلونس
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_2" n="2" xml:id="Gr-Z_0011-00379_246r_ar_lb_2"/>
+						و تموتاوس <hi rend="red">//</hi> الى بيعه
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_3" n="3" xml:id="Gr-Z_0011-00379_246r_ar_lb_3"/>
+						الثسلو‫نيكىں ڡى اللّه
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_4" n="4" xml:id="Gr-Z_0011-00379_246r_ar_lb_4"/>
+						الاب و سيدنا ايسوع المسيح <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_5" n="5" xml:id="Gr-Z_0011-00379_246r_ar_lb_5"/>
+						النعمه و السّلام معكم من الله
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_6" n="6" xml:id="Gr-Z_0011-00379_246r_ar_lb_6"/>
+						ابينا <hi rend="red">//</hi> و ر‫ٮنا‬ ايسوع المسيح <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_7" n="7" xml:id="Gr-Z_0011-00379_246r_ar_lb_7"/>
+						<milestone unit="verse" n="1:2"/> ىسكر الله ابدًا
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_8" n="8" xml:id="Gr-Z_0011-00379_246r_ar_lb_8"/>
+						عن جميعكم <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_9" n="9" xml:id="Gr-Z_0011-00379_246r_ar_lb_9"/>
+						و نذكركم فى
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_10" n="10" xml:id="Gr-Z_0011-00379_246r_ar_lb_10"/>
+						صلواتنا دايم <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_11" n="11" xml:id="Gr-Z_0011-00379_246r_ar_lb_11"/>
+						<milestone unit="verse" n="1:3"/> و نذكر اعمالكم
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_12" n="12" xml:id="Gr-Z_0011-00379_246r_ar_lb_12"/>
+						و ايمانكم <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_13" n="13" xml:id="Gr-Z_0011-00379_246r_ar_lb_13"/>
+						و نصبكم و صبركم <hi rend="red">//</hi> محبتكم
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_14" n="14" xml:id="Gr-Z_0011-00379_246r_ar_lb_14"/>
+						على ما رجوتم به سيدنا
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_15" n="15" xml:id="Gr-Z_0011-00379_246r_ar_lb_15"/>
+						يسوع المسيح <hi rend="red">//</hi> قدام
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_16" n="16" xml:id="Gr-Z_0011-00379_246r_ar_lb_16"/>
+						اللة و ابينا <hi rend="red">//</hi>
+						<milestone unit="verse" n="1:4"/> عالمين يا معشر
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_17" n="17" xml:id="Gr-Z_0011-00379_246r_ar_lb_17"/>
+						الاخوه المحبين <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_18" n="18" xml:id="Gr-Z_0011-00379_246r_ar_lb_18"/>
+						انكم من الله دعيتم <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_19" n="19" xml:id="Gr-Z_0011-00379_246r_ar_lb_19"/>
+						<milestone unit="verse" n="1:5"/> لان بشارتنا
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_20" n="20" xml:id="Gr-Z_0011-00379_246r_ar_lb_20"/>
+						لم تصير اليكم بالقول
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_21" n="21" xml:id="Gr-Z_0011-00379_246r_ar_lb_21"/>
+						فقط <hi rend="red">//</hi> الا بالقدره
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_22" n="22" xml:id="Gr-Z_0011-00379_246r_ar_lb_22"/>
+						و الرّوح القدس <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_23" n="23" xml:id="Gr-Z_0011-00379_246r_ar_lb_23"/>
+						و كمال كثير <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_24" n="24" xml:id="Gr-Z_0011-00379_246r_ar_lb_24"/>
+						كالذي تعلمون من
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_25" n="25" xml:id="Gr-Z_0011-00379_246r_ar_lb_25"/>
+						حَالاتنا بين اظهركم <hi rend="red">//</hi>
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_26" n="26" xml:id="Gr-Z_0011-00379_246r_ar_lb_26"/>
+						من ىسيكم <hi rend="red">//</hi>
+						<milestone unit="verse" n="1:6"/> و انتم قد صرتم
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_27" n="27" xml:id="Gr-Z_0011-00379_246r_ar_lb_27"/>
+						مقتدين بنا و بالرب <hi rend="red">//</hi> و تقبلتم
+						<lb facs="#Gr-Z_0011-00379_246r_ar_line_28" n="28" xml:id="Gr-Z_0011-00379_246r_ar_lb_28"/>
+						الكلم <choice>
+							<orig>ڡى</orig>
+							<reg>فى</reg>
+						</choice>
+						<choice>
+							<orig>حرن</orig>
+							<reg>حزن</reg>
+						</choice> كثير <hi rend="red">//</hi>
+					</p>
+				</body>
+			</text>
+		</group>
+	</text>
+</TEI>
