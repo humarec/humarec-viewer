@@ -1290,6 +1290,7 @@ footer{
 	font-size:1.5em;
 	color: #f4f5f7;
 	height: 28px;
+	position: absolute;
 }
 #search_elem i{
 	top: -1px;
@@ -2732,7 +2733,7 @@ ul.ul_list li:hover, ul.ul_list li.list_element_opened{
 .section-title {
 	display: block;
 	font-weight: bold;
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 }
 
 .font-size-controller {

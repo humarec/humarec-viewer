@@ -43,7 +43,7 @@ div[id*='regesto'] hr{
 	padding-left: 10px;
 	margin: 10px auto;
 	text-align: left;
-/*line-height: 28px;*/
+line-height: 25px;
     font-size: 100%;
    
 }
@@ -140,8 +140,9 @@ DIV.dipl-right, SPAN.dipl-right {
 }
 
 DIV.dipl-left{
-    /*width: 92%;*/
+    width: 90%;
     display: inline-table;
+    
 }
 
 DIV.dipl-attachment{
@@ -329,8 +330,9 @@ div.interp-right, span.interp-right {
 }
 
 div.interp-left, span.interp-left{
-/*    width: 92%;*/
+  width: 92%;
     display: inline-table;
+    
 }
 
 div.interp-attachment{

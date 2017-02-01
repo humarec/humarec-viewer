@@ -18,22 +18,23 @@
 	<!-- Page layout -->
 	<!--             -->
 	
-	<!-- P Paragraphs -->
+	<!-- P Paragraphs 
 	<xsl:template match="tei:p" mode="dipl">
 		<xsl:element name="span">
 			<xsl:attribute name="class"> 
 				<xsl:value-of select="$ed_name1,name()" separator="-" />
-				<xsl:text> </xsl:text><!--important-->
-				<xsl:value-of select="if(@rend) then ($ed_name1, translate(@rend, '.', '_')) else ('')" separator="-"/>
+				<xsl:text> </xsl:text>--><!--important-->
+	<!--	<xsl:value-of select="if(@rend) then ($ed_name1, translate(@rend, '.', '_')) else ('')" separator="-"/>
 			</xsl:attribute>
 			<xsl:if test="current()[not((string-length(normalize-space()))= 0)]">
 				<xsl:attribute name="class" select="$ed_name1,name()" separator="-"/>
 				<xsl:apply-templates mode="#current"> </xsl:apply-templates>
 			</xsl:if>
 		</xsl:element>
-	</xsl:template>
+	</xsl:template>-->
 	
-	<!-- TEXT direction arabe Sara-->
+	
+	<!-- TEXT direction arabe Sara -->
 	<xsl:template match="tei:text" mode="dipl">
 		<xsl:element name="span">
 			<xsl:attribute name="class" select="$ed_name1,name(),translate(@rend, '.', '_')" separator="-"/>
@@ -42,8 +43,6 @@
 		</xsl:element>
 	</xsl:template>
 	
-	
-
 	
 	<!-- L Verse line-->
 	<xsl:template match="tei:l" mode="dipl">
