@@ -1,4 +1,4 @@
-
+@import url(https://fonts.googleapis.com/css?family=Scheherazade);
 
 @font-face {
 	font-family: 'Junicode';
@@ -156,7 +156,7 @@ SPAN.dipl-lineN {
 	}
 
 SPAN.dipl-text-ar {
-	font-family: 'Scheherazade', sherif;
+	font-family: 'Scheherazade', 'Baghdad', sherif;
 	direction: rtl;
 	text-align: right;
 	display: block;

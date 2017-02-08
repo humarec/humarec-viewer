@@ -10,7 +10,8 @@
       <listOrg active="1" lang="def">LIST_ORG</listOrg>
    </liste>
    <editions>
-      <edition>greek_diplomatic</edition>       <edition>greek_normalized</edition>       <edition>latin_normalized</edition>       <edition>arabic_diplomatic</edition>       <edition>arabic_normalized</edition>
+      <edition>arabic_diplomatic</edition>
+      <edition>arabic_normalized</edition>
    </editions>
    <textpage>
       <text n="Paul_transcript_1Cor" label="1 Cor">
