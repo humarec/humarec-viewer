@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Copyright (C) 2013-2017 the EVT Development Team.
+    
+    EVT 1 is free software: you can redistribute it 
+    and/or modify it under the terms of the 
+    GNU General Public License version 2
+    available in the LICENSE file (or see <http://www.gnu.org/licenses/>).
+    
+    EVT 1 is distributed in the hope that it will be useful, 
+    but WITHOUT ANY WARRANTY; without even the implied 
+    warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+    See the GNU General Public License for more details. 
+-->
 <xsl:stylesheet xpath-default-namespace="http://www.tei-c.org/ns/1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -27,12 +40,7 @@
 			<title>
 				<xsl:value-of select="$root//tei:titleStmt/tei:title"/>
 				<!-- <xsl:value-of select="normalize-space(//tei:titleStmt/tei:title)"/> -->
-			
-				
-			
 			</title>
-			
-			
 
 			<xsl:choose>
 				<xsl:when test="$html_tc!='datastructure'">
@@ -284,10 +292,7 @@
 							<xsl:if test="$badge=true()">
 								<div id="badge_title"><xsl:value-of select="$badge_text"/></div>
 							</xsl:if>
-							
-							
 						</div>
-						<div id="home_subtitle"><xsl:value-of select="$index_subtitle"/></div>
 						<div class='concave'>
 							<div class='extTop'>
 								<div class='topleftconcave'></div>
@@ -838,11 +843,9 @@
 											<i class="fa fa-info-circle"></i>
 										</xsl:element>
 									</xsl:if>
-									
 									<span id="github_elem" class="iconButtons" title="github">
 										<a href="https://github.com/humarec/manuscript-viewer/" id="github_link"><i class="fa fa-github"></i></a>
 									</span>
-									
 								</div>
 								<xsl:element name="i">
 									<xsl:attribute name="class" select="'fa fa-times-circle closeFullScreen'"/>
@@ -1028,9 +1031,7 @@
 									<i class="fa fa-font"></i>
 									<i class="fa fa-plus"></i>
 								</span>
-								
 							</div>
-							
 						</div>
 					</section>
 					<section id="central_button">

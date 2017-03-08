@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xsl:stylesheet xpath-default-namespace="http://www.tei-c.org/ns/1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
@@ -44,6 +45,7 @@
 	<xsl:param name="index_title" select="'Humarec Manuscript Viewer'"/>
 	<xsl:param name="index_subtitle"><div><p>A Vital-DH@Vital-IT project.</p><p> The images are property of the Marciana Library, all rights reserved.</p></div></xsl:param>
 	
+	
 	<!-- EN: Welcome Message -->
 	<!-- IT: Messaggio di benvenuto -->
 	<!-- default: 'Welcome to an edition created with EVT' -->
@@ -71,7 +73,7 @@
 	<!-- EN: Set text in badge -->
 	<!-- IT: Imposta testo del badge -->
 	<!-- ex: alpha, beta, stable etc -->	
-	<xsl:param name="badge_text" select="'SAMPLE'"/>
+	<xsl:param name="badge_text" select="'DIGITAL'"/>
 	
 	<!-- EN: On/Off doubleview -->
 	<!-- IT: Attiva/Disattiva vista doppia pagina -->
@@ -174,11 +176,10 @@
 				then(//tei:body/tei:div[@subtype='edition_text']/name()) 
 			else(//tei:text/tei:body/name() ))"/>
 	
-	
 	<!-- EN: Indicate the maximum depth of pb/lb with relatively to the element stated in the variable $start_split-->
 	<!-- IT: Indica la profondità massima dei pb/lb rispetto all'elemento inserito della variabile $start_split-->
 	<xsl:variable name="start_split_depth" select="//node()[name()=$start_split]/count(ancestor-or-self::node())"/>
-	<xsl:variable name="max_depth" as="xs:integer" select="max(((max(//tei:pb/count(ancestor-or-self::node())) - //node()[name()=$start_split]/count(ancestor-or-self::node())), (max(//tei:lb/count(ancestor-or-self::node())) - //node()[name()=$start_split]/count(ancestor-or-self::node()))))"/>
+	<xsl:variable name="max_depth" as="xs:integer" select="max(((max(//tei:pb/count(ancestor-or-self::node())) - //node()[name()=$start_split]/count(ancestor-or-self::node())), (max(//tei:lb/count(ancestor-or-self::node())) - //node()[name()=$start_split]/count(ancestor-or-self::node())), (max(//tei:cb/count(ancestor-or-self::node())) - //node()[name()=$start_split]/count(ancestor-or-self::node()))))"/>
 	<!-- EN: Highest depth of a pb relatively to the body: max(//tei:pb/count(ancestor-or-self::node())) - //tei:body/count(ancestor-or-self::node()) 
 		     Highest depth of a lb relatively to the body: max(//tei:lb/count(ancestor-or-self::node())) - //tei:body/count(ancestor-or-self::node())
 	-->
@@ -283,7 +284,7 @@
 	<!-- EN: On/Off Document Navigation -->
 	<!-- IT: Attiva/Disattiva navigazione per documento -->
 	<!-- default: false() -->
-	<xsl:param name="document_navigation" select="false()"/>
+	<xsl:param name="document_navigation" select="true()"/>
 	
 	<!-- LISTS -->
 	
@@ -297,7 +298,7 @@
 	<!-- default: true() -->
 	<xsl:param name="list_place" select="true()"/>
 	
-	<!-- EN: On/Off organizations list -->
+	<!-- EN: On/Off orgName list -->
 	<!-- IT: Attiva/disattiva lista organizzazioni -->
 	<!-- default: true() -->
 	<xsl:param name="list_org" select="true()"/>
@@ -314,7 +315,7 @@
 		<roleName/>
 		<measure/>
 		<date/>
-		<orgName/> -->
+		<orgName/>-->
 	</xsl:variable>
 	
 	<!-- EN: Information about EVT -->

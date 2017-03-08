@@ -94,7 +94,7 @@
 									
 										{ 
 											"line" : "7|line 7",
-											"text" : "i 1:3  Gratia vobis et pax · a deo ",
+											"text" : "ı 1:3  Gratia vobis et pax · a deo ",
 											"tags" : "Paul_transcript_1Cor|1 Cor",
 											"loc" : "Gr-Z_0011-00379_156r|156r"
 										},
@@ -185,7 +185,7 @@
 									
 										{ 
 											"line" : "20|line 20",
-											"text" : "1:8  qui et confirmabitconfirmavit: A R F S ",
+											"text" : "1:8  qui et confirmabitin A R F S: confirmavit. ",
 											"tags" : "Paul_transcript_1Cor|1 Cor",
 											"loc" : "Gr-Z_0011-00379_156r|156r"
 										},
@@ -227,7 +227,7 @@
 									
 										{ 
 											"line" : "26|line 26",
-											"text" : "christi domini nostri · ii ",
+											"text" : "christi domini nostri · ıı ",
 											"tags" : "Paul_transcript_1Cor|1 Cor",
 											"loc" : "Gr-Z_0011-00379_156r|156r"
 										},
@@ -255,7 +255,7 @@
 									
 										{ 
 											"line" : "2|line 2",
-											"text" : "et tymotheus · ecclesiae ",
+											"text" : "et tẏmotheus · ecclesiae ",
 											"tags" : "Paul_transcript_1Thess|1 Thess",
 											"loc" : "Gr-Z_0011-00379_246r|246r"
 										},
@@ -276,28 +276,28 @@
 									
 										{ 
 											"line" : "5|line 5",
-											"text" : "gratia vobis et pax 1:2  a deo patre ",
+											"text" : "gratia vobis et pax a deo patre ",
 											"tags" : "Paul_transcript_1Thess|1 Thess",
 											"loc" : "Gr-Z_0011-00379_246r|246r"
 										},
 									
 										{ 
 											"line" : "6|line 6",
-											"text" : "nostro et domino iesu christoadd. a deo patre nostro et domino iesu christo · ",
+											"text" : "nostro et domino iesu christoadd. a deo ... iesu christo. Influence from the Greek column? · ",
 											"tags" : "Paul_transcript_1Thess|1 Thess",
 											"loc" : "Gr-Z_0011-00379_246r|246r"
 										},
 									
 										{ 
 											"line" : "7|line 7",
-											"text" : "Gratias agimus deo semper pro omnibus ",
+											"text" : "1:2 Gratias agimus deo semper pro omnibus ",
 											"tags" : "Paul_transcript_1Thess|1 Thess",
 											"loc" : "Gr-Z_0011-00379_246r|246r"
 										},
 									
 										{ 
 											"line" : "8|line 8",
-											"text" : "vobis memoriam vestrivestri: as in G R F C Λ Φ c o facien ",
+											"text" : "vobis memoriam vestrivestri: as in G R F C Λ Φ 𝔬 𝔠 facien ",
 											"tags" : "Paul_transcript_1Thess|1 Thess",
 											"loc" : "Gr-Z_0011-00379_246r|246r"
 										},
@@ -388,7 +388,7 @@
 									
 										{ 
 											"line" : "21|line 21",
-											"text" : "mone tantum sedom. et: as in A F o in ",
+											"text" : "mone tantum sedom. et: as in A F 𝔠 in ",
 											"tags" : "Paul_transcript_1Thess|1 Thess",
 											"loc" : "Gr-Z_0011-00379_246r|246r"
 										},
@@ -416,7 +416,7 @@
 									
 										{ 
 											"line" : "25|line 25",
-											"text" : "in vobisin vobis: cet. propter vos ii ",
+											"text" : "in vobisin vobis: as in cet. propter vos ıı ",
 											"tags" : "Paul_transcript_1Thess|1 Thess",
 											"loc" : "Gr-Z_0011-00379_246r|246r"
 										},
@@ -444,9 +444,205 @@
 									
 										{ 
 											"line" : "29|line 29",
-											"text" : "bulatione multa   ",
+											"text" : "bulatione multa  ",
 											"tags" : "Paul_transcript_1Thess|1 Thess",
 											"loc" : "Gr-Z_0011-00379_246r|246r"
+										},
+									
+										{ 
+											"line" : "1|line 1",
+											"text" : "cum gaudio spiritus sancti · 1:7  ita ut ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "2|line 2",
+											"text" : "facti sitis forma omnibus ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "3|line 3",
+											"text" : "credentibus in macedonia ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "4|line 4",
+											"text" : "et in achaia · 1:8  a vobis enim di ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "5|line 5",
+											"text" : "ffamatus est sermo domini · non ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "6|line 6",
+											"text" : "solum in macedoniam et in ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "7|line 7",
+											"text" : "achaiam · sed et in omnem lo ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "8|line 8",
+											"text" : "cumIn Weber-Gryson's edition: omni loci fides vestra quae est ad ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "9|line 9",
+											"text" : "deum profecta · est ita ut non ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "10|line 10",
+											"text" : "sit vobisOnly few manuscripts have vobis here and not nobis. Influence from the Greek column? necesse quicquam lo ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "11|line 11",
+											"text" : "qui · 1:9  Ipsi enim de nobis annunciant ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "12|line 12",
+											"text" : "qualem introitum habuerimus ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "13|line 13",
+											"text" : "ad vos · et quomodo conversi ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "14|line 14",
+											"text" : "estis ad deum a simula ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "15|line 15",
+											"text" : "chris · servire deo vivo ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "16|line 16",
+											"text" : "et vero · 1:10  et expectare ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "17|line 17",
+											"text" : "filium eius de celis ~ quem ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "18|line 18",
+											"text" : "suscitavit ex mortuis · iesum ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "19|line 19",
+											"text" : "qui eripuit nos ab ira ven ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "20|line 20",
+											"text" : "tura · ııı 2:1  Nam ipsi scitis ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "21|line 21",
+											"text" : "fratres introitum nostrum ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "22|line 22",
+											"text" : "ad vos · quia non ina ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "23|line 23",
+											"text" : "nis fuit 2:2  sed ante passi ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "24|line 24",
+											"text" : "et contumeliis affecti sicut ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "25|line 25",
+											"text" : "scitis in phẏlippis ~ fidu ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "26|line 26",
+											"text" : "ciam habuimus in deo nostro · ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "27|line 27",
+											"text" : "loqui ad vos evangelium ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
+										},
+									
+										{ 
+											"line" : "28|line 28",
+											"text" : "dei in multa sollicitudine :   ",
+											"tags" : "Paul_transcript_1Thess|1 Thess",
+											"loc" : "Gr-Z_0011-00379_246v|246v"
 										},
 									
 				{

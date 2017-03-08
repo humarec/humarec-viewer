@@ -1,3 +1,17 @@
+/**
+ * Copyright (C) 2013-2017 the EVT Development Team.
+ * 
+ * EVT 1 is free software: you can redistribute it 
+ * and/or modify it under the terms of the 
+ * GNU General Public License version 2
+ * available in the LICENSE file (or see <http://www.gnu.org/licenses/>).
+ * 
+ * EVT 1 is distributed in the hope that it will be useful, 
+ * but WITHOUT ANY WARRANTY; without even the implied 
+ * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+ * See the GNU General Public License for more details.
+ *
+ **/
 @import url(https://fonts.googleapis.com/css?family=Scheherazade);
 
 @font-face {
@@ -43,16 +57,15 @@ div[id*='regesto'] hr{
 	padding-left: 10px;
 	margin: 10px auto;
 	text-align: left;
-line-height: 25px;
+	line-height: 25px;
     font-size: 100%;
-   
 }
 
 #text_frame-add, #front_frame-add, #regesto, #regesto-add {
 	margin-top: -30px;
 	max-width: 600px;
 	margin: 10px auto;
-/*text-align: left;*/
+	text-align: left;
 }
 
 #regesto_cont, #regesto_cont-add {
@@ -106,10 +119,8 @@ TR {valign: top}*/
 /*SPAN.abbr {color: purple}*/
 
 /**EDIZIONE DIPLOMATICA**/
-
-SPAN.dipl-p-rtl {
-    color: red
-    
+DIV.dipl-zone{
+    margin-bottom: 5px; 
 }
 
 DIV.dipl-center, SPAN.dipl-center {
@@ -136,14 +147,12 @@ DIV.dipl-right, SPAN.dipl-right {
     /*width: 92%;*/
     display: inline-table;
     background:#FFF;
-   
 }
 
 DIV.dipl-left{
-    width: 90%;
+    width: 92%;
     display: inline-table;
-    
-}
+}   
 
 DIV.dipl-attachment{
     border: 1px solid black;
@@ -154,7 +163,7 @@ SPAN.dipl-lineN {
 	color: grey;
 	font-size: 0.8em; 
 	}
-
+	
 SPAN.dipl-text-ar {
 	font-family: 'Scheherazade', 'Baghdad', sherif;
 	direction: rtl;
@@ -175,6 +184,7 @@ span.interp-milestone {
 	color:#B72D2D;
 }
 
+
 SPAN.dipl-subst { 
 	text-decoration: underline; 
 }
@@ -184,12 +194,9 @@ SPAN.dipl-del {
 	text-decoration: line-through; 
 }
 
-
-
 SPAN.dipl-add { 
 	background-color: rgba(0,128,0, 0.8); 
 }
-
 
 SPAN.dipl-retrace { 
 	background-color: red; 
@@ -211,6 +218,10 @@ SPAN.dipl-orig SPAN.dipl-under {
 
 SPAN.dipl-damage { 
 	background-color: rgba(193,193,193, 0.7); 
+}
+
+SPAN.dipl-supplied {
+	display: none !important;
 }
 
 span.dipl-choice_popup { 
@@ -291,6 +302,11 @@ span.dipl-hi-red {
 	color: red; 
 }
 
+span.dipl-hi-exp{ 
+	vertical-align: super;
+    font-size: smaller;
+}
+
 
 /**EDIZIONE INTERPRETATIVA**/
 
@@ -330,9 +346,8 @@ div.interp-right, span.interp-right {
 }
 
 div.interp-left, span.interp-left{
-  width: 92%;
+width: 92%;
     display: inline-table;
-    
 }
 
 div.interp-attachment{
@@ -344,6 +359,7 @@ span.interp-lineN {
 	color: grey;
 	font-size: 0.8em; 
 }
+
 
 SPAN.interp-text-ar {
 	font-family: 'Scheherazade', sherif;
@@ -357,11 +373,9 @@ span.interp-milestone {
 	font-size:small;
 	color:#B72D2D;
 }	
-
 span.interp-ex { 
 	font-style: italic; 
 }
-
 
 span.interp-choice_popup, span.interp-choice_popup_corr{ 
     display: inline-table;
@@ -481,13 +495,37 @@ span.interp-hi-red {
 	color: red; 
 }
 
+
 span.interp-ex { 
 	font-style: italic; 
 }
 
-
-/* New Release */
 /* CDP */
+
+span.interp-supplied {
+
+}
+/* <supplied> default */
+span.interp-supplied::before {
+	content: "[";
+}
+span.interp-supplied::after {
+	content: "]";
+}
+/* <supplied> @reason="omitted" */
+span.interp-supplied[data-reason='omitted']::before {
+	content : "<";
+}
+span.interp-supplied[data-reason='omitted']::after {
+	content : ">";
+}
+/* <supplied> @reason="illegible" */
+span.interp-supplied[data-reason='illegible']::before {
+	content: "[";
+}
+span.interp-supplied[data-reason='illegible']::after {
+	content: "]";
+}
 
 span.tooltip {
 	font-size: 80%;
@@ -535,7 +573,7 @@ span.popup{
 
 span.dipl-choice_popup:hover span.dipl-orig,
 span.dipl-choice_popup.hover span.dipl-orig {
-	color: #561c0a;
+	color: #999966;
 	text-decoration: underline; 
 }
 span.popup:hover span.trigger span.tooltip, span.popup:hover span.trigger span.inline_note, span.popup:hover span.trigger span.text_note{
@@ -620,6 +658,9 @@ span.emph{
     /*font-weight:bold;*/
     font-style:italic;
 }
+
+
+
 span.italic{
 	font-style:italic;
 }
@@ -754,3 +795,28 @@ span.tooltip span.entity_name.link_active{
     text-decoration: underline;
 }
 
+/* TABLE */
+.table {
+    font-size:85%;
+    margin-bottom: 20px;
+	border: 1px solid rgba(185, 170, 153, 0.3);
+}
+.table > div {
+	padding-left: .5em;
+}
+.table .table-row:nth-child(even){
+	background: rgba(185, 170, 153, .1);
+}
+.table-cell {
+    width: 45%;
+    margin: 0 2%;
+    vertical-align: middle;
+    display: inline-table;
+    margin: 0 2% 0 0;
+}
+
+.table-cell:last-child {
+    right: 0;
+    text-align: right;
+    margin: 0 0 2%;
+}

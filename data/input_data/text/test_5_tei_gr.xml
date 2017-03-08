@@ -28,7 +28,7 @@
 			</titleStmt>
 			
 			<publicationStmt>
-				<authority>Humarec Vital-DH@Vital-IT project</authority>
+				<authority>Humarec Vital-DH project@Vital-IT </authority>
 				<date>2016</date>
 				<availability status="unknown">
 					<p>Visit the Humarec Homepage for more information.</p>
@@ -310,7 +310,7 @@
 						<choice>
 							<orig><am>χ&#x0360;υ</am></orig>
 							<reg><ex>χριστοῦ</ex></reg>
-						</choice><note n="Sara" xml:id="Note_1Cor_gr1">ἰησοῦ χριστοῦ: same word order as in ℵ A L P Ψ 81. 104. 365. 630. 1175. 1241. 1505. 1506. 1739. 1881. 2464 M b vgst sy</note>  διὰ θελήματος <choice>
+						</choice><ptr target="#Note_1Cor_gr1" type="noteAnchor"/>  διὰ θελήματος <choice>
 							<orig><am>θ&#x0360;υ</am></orig>
 							<reg><ex>θεοῦ</ex></reg>
 						</choice> · καὶ
@@ -522,6 +522,7 @@
 							</figure>
 						</div>
 					</div>
+					<note n="1" xml:id="Note_1Cor_gr1"><emph>ἰησοῦ</emph> χριστοῦ:  <ref xml:base="http://www.google.ch">word</ref> <emph>order</emph> as in ℵ A L P Ψ 81. 104. 365. 630. 1175. 1241. 1505. 1506. 1739. 1881. 2464 M b vgst sy</note>
 					
 				</back>
 			

@@ -1,25 +1,36 @@
-# ************************* #
-# EVT 1.1.1 - RELEASE NOTES # 
-# ************************* #
+#############################
+## EVT 1.2 - RELEASE NOTES ##
+#############################
 
-# Please note that for the first there is an incompatibility with regard to a previous version of EVT: read carefully the first item, and check the manual!
+* Added support for integrations and editorial additions encoded with <supplied>, with particular attention to omissions (@reason="omitted") and illegible text (@reason="illegible");
 
-# Changed the starting point of the transformation which is now based on <text> (also when using a <group> element): this is **the most important difference** compared to EVT 1.0, in fact note that the old method based on <div> does not work anymore, so please make sure to read the EVT 1.1 manual on this point;
+* Added support for columns breaks (<cb>) and tables (<table>);
 
-# Added support for image formats other than JPEG;
+* Added support for <note>s that are not inline and are referenced in the text one or more times with the element <ptr/>;
+* Added support for <ref>s whose @target attribute refers to a web page;
 
-# Added German language support thanks to Christian Schuster from [Transylvania Digital Humanities Centre] (http://centre.ubbcluj.ro/digihubb/) who actually translated the English localization file;
+* Many bugs fixed!  
 
-# Added support for list of organizations (<listOrg>) and named entities <org>s;
 
-# Added a template to rend italicized <title>s in <note>s;
+##############
+## EXAMPLES ##
+##############
 
-# Added files for custom XSLT templates (evt_builder-custom-templates.xsl) and CSS rules (evt_builder-custom-styles.css), check section 3 of the manual;
+* With this release we provide three different examples. The first one is the one that has already been transformed. If you want to have a look at the other examples you have to rename the corresponding configuration file as "evt_builder-config.xsl" and perfom a new transformation of the XML source file, following the instruction contained in the documentation.
+(NB: remember to add a "_default" suffix to the current configuration file, in order to avoid losing the default configurations!).  
 
-# Added a distinction between critical <note>s and comment <note>s;
 
-# Renamed evt_builder-miscellaneous.xsl into evt_builder-general.xsl;
+#### EXAMPLE 1 : Excerpt from Codice Pelavicino Digitale
 
-# Added initial support for original content encoded into a <front>;
+	XML file: input_data/text/CodicePelavicino.xml
+	Config file: config/evt_builder-config_CP.xsl
 
-# Many bug fixes!
+#### EXAMPLE 2 : Excerpt from The Digital Vercelli Book
+
+	XML file: input_data/text/DOTR.xml
+	Config file: config/evt_builder-config_DOTR.xsl
+
+#### EXAMPLE 3 : Mixed examples of TEI Embedded Transcription
+
+	XML file: input_data/text/ET_mixedExamples.xml
+	Config file: config/evt_builder-config_ET_mixedExamples.xsl

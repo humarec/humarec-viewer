@@ -1,4 +1,19 @@
-﻿div#CurrentAnnotation{
+﻿/**
+ * Copyright (C) 2013-2017 the EVT Development Team.
+ * 
+ * EVT 1 is free software: you can redistribute it 
+ * and/or modify it under the terms of the 
+ * GNU General Public License version 2
+ * available in the LICENSE file (or see <http://www.gnu.org/licenses/>).
+ * 
+ * EVT 1 is distributed in the hope that it will be useful, 
+ * but WITHOUT ANY WARRANTY; without even the implied 
+ * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+ * See the GNU General Public License for more details.
+ *
+ **/
+
+div#CurrentAnnotation{
     display: none;
 }
 
@@ -7,7 +22,7 @@ div.Annotation{
     position: absolute;
     background-color: #ffffff;
     color: #000000;
-    border: 2px solid #2a363b;
+    border: 2px solid #4E443C;
     border-radius: 2px;
     padding: 0;
     width: 300px;
@@ -30,7 +45,7 @@ div.PopupCloser{
     height: 17px;
     line-height: 17px;
     font-size: 17px;
-    color: #fbf9f6;
+    color: #F5EAD4;
 }
 
 div.PopupCloser:hover{
@@ -44,7 +59,7 @@ margin: 5px;
 }
 
 div.AnnText{
-    border-top: 2px solid #2a363b;
+    border-top: 2px solid #4E443C;
     font-size: 16px;
     max-height: 200px;
     overflow-y: auto;
@@ -79,8 +94,8 @@ div.AnnText{
 .AnnTitle{
     width: 100%;
     height: 100%;
-    background-color: #2a363b;
-    /*background-color: #fbf9f6;*/
+    background-color: #4E443C;
+    /*background-color: #F5EAD4;*/
 }
 /*
 #AnnMenu{
@@ -112,14 +127,6 @@ div.AnnText{
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-
-.AnnSubmenu-ar{
-list-style-type: none;
-    margin: 0;
-    padding: 0;
-   text-align: right;
 }
 
 /*.AnnSubmenu>li{

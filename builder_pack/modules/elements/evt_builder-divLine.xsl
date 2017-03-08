@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Copyright (C) 2013-2017 the EVT Development Team.
+    
+    EVT 1 is free software: you can redistribute it 
+    and/or modify it under the terms of the 
+    GNU General Public License version 2
+    available in the LICENSE file (or see <http://www.gnu.org/licenses/>).
+    
+    EVT 1 is distributed in the hope that it will be useful, 
+    but WITHOUT ANY WARRANTY; without even the implied 
+    warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+    See the GNU General Public License for more details. 
+-->
 <xsl:stylesheet xpath-default-namespace="http://www.tei-c.org/ns/1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -29,6 +42,28 @@
                         <xsl:element name="div"> <!-- IT: aggiungi div con classe edition_rend -->
                             <xsl:attribute name="class" select="if(tei:lb[@rend]) then ($ed_name1, translate(tei:lb/@rend, '.', '_')) else ($ed_name, 'left')" separator="-"/>
                             <xsl:copy-of select="current-group()[not(self::tei:lb)] [not(self::node()[name()='span'][@class=concat($ed_name,'-lineN')])]"/>
+                        </xsl:element>
+                    </xsl:element>
+                </xsl:when>
+                <xsl:otherwise> <!--IT: Gruppo che non ha un lb (puo succedere nel primo gruppo)  -->
+                    <xsl:copy-of select="current-group()"></xsl:copy-of>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:for-each-group>
+    </xsl:template>
+    
+    
+    <xsl:template name="divCb">
+        <xsl:param name="text"/>
+        <xsl:param name="ed_name"/>
+        <xsl:for-each-group select="$text/node()" group-starting-with="//tei:cb">
+            <xsl:choose>
+                <xsl:when test="self::tei:cb">
+                    <xsl:element name="div">
+                        <xsl:attribute name="class" select="$ed_name"/>
+                        <xsl:element name="div"> <!-- IT: aggiungi div con classe edition_rend -->
+                            <xsl:attribute name="class" select="if(@rend) then ($ed_name1, 'column', translate(@rend, '.', '_')) else ($ed_name, 'column', 'left')" separator="-"/>
+                            <xsl:copy-of select="current-group()[not(self::tei:cb)]"/>
                         </xsl:element>
                     </xsl:element>
                 </xsl:when>

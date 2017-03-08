@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Copyright (C) 2013-2017 the EVT Development Team.
+    
+    EVT 1 is free software: you can redistribute it 
+    and/or modify it under the terms of the 
+    GNU General Public License version 2
+    available in the LICENSE file (or see <http://www.gnu.org/licenses/>).
+    
+    EVT 1 is distributed in the hope that it will be useful, 
+    but WITHOUT ANY WARRANTY; without even the implied 
+    warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+    See the GNU General Public License for more details. 
+-->
+<!-- few changes made by Sara Schulthess 03/04/2017-->
+
 <xsl:stylesheet xpath-default-namespace="http://www.tei-c.org/ns/1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -157,6 +172,17 @@
 		<xsl:copy-of select="."/>
 	</xsl:template>
 	
+	<!-- Column break -->
+	<xsl:template match="tei:cb" mode="interp">
+		<xsl:copy-of select="."/>
+	</xsl:template>
+	<!-- Sara: copied from dipl-core 
+	<xsl:template match="tei:cb" mode="interp">
+		<xsl:element name="tei:cb">
+			<xsl:copy-of select="@* except(@xml:id)"></xsl:copy-of>
+			<xsl:attribute name="{@xml:id/name()}" select="if(ends-with(@xml:id, 'orig')) then(replace(@xml:id, 'orig', '')) else(@xml:id)"/>
+		</xsl:element>
+	</xsl:template>-->
 	
 	<!--               -->
 	<!-- Transcription -->
@@ -360,6 +386,14 @@
 		</xsl:element>
 	</xsl:template>
 	
+	<xsl:template match="tei:supplied" mode="interp">
+		<xsl:element name="span">
+			<xsl:attribute name="class" select="$ed_name2, name()" separator="-"/>
+			<xsl:attribute name="data-reason" select="@reason" />
+			<xsl:apply-templates mode="#current"/>
+		</xsl:element>
+	</xsl:template>
+	
 	<xsl:template match="tei:seg" mode="interp">
 		<xsl:element name="span">
 			<xsl:choose>
@@ -413,7 +447,17 @@
 	<!-- REF References to additional text -->
 	<xsl:template match="tei:ref" mode="interp">
 		<xsl:choose>
+			<!-- Se il @target fa riferiemento ad una risorsa online, allora lo trasformo in link HTML -->
+			<xsl:when test="@target[contains(., 'www')] or @target[contains(., 'http')]">
+				<xsl:element name="a">
+					<xsl:attribute name="href" select="if(@target[contains(., 'http')]) then(@target) else(concat('http://', @target))" />
+					<xsl:attribute name="target" select="'_blank'"/>
+					<xsl:attribute name="data-type"><xsl:value-of select="@type"/></xsl:attribute>
+					<xsl:apply-templates mode="#current"/>
+				</xsl:element>
+			</xsl:when>
 			<xsl:when test="node()/ancestor::tei:note or node()/ancestor::tei:desc">
+			<!-- Se il tei:ref si trova all'interno di una nota o della descrizione allora diventa soltanto un trigger -->
 				<xsl:element name="span">
 					<xsl:attribute name="class">ref</xsl:attribute>
 					<xsl:attribute name="data-target"><xsl:value-of select="@target"/></xsl:attribute>
@@ -422,6 +466,7 @@
 				</xsl:element>
 			</xsl:when>
 			<xsl:otherwise>
+			<!-- Altrimenti si trasforma in popup -->
 				<xsl:element name="span">
 					<xsl:attribute name="class">popup ref</xsl:attribute>
 					<xsl:element name="span">
@@ -908,28 +953,39 @@
 	
 	<!-- PTR Pointer -->
 	<xsl:template match="tei:ptr" mode="interp">
-		<xsl:if test="@target">
-			<xsl:element name="span">
-				<xsl:attribute name="class">popup image</xsl:attribute>
-				<xsl:element name="span">
-					<xsl:attribute name="class">trigger</xsl:attribute>
-					<xsl:element name="i">
-						<xsl:attribute name="class">fa fa-picture-o</xsl:attribute>
-					</xsl:element>
-				</xsl:element>
-				<xsl:element name="span">
-					<xsl:attribute name="class">tooltip</xsl:attribute>
-					<xsl:element name="span"><xsl:attribute name="class">before</xsl:attribute></xsl:element>
-					<xsl:for-each select="$root//tei:item[@xml:id=current()/@target]">
-						<xsl:element name="img">
-							<xsl:attribute name="src">data/input_data/<xsl:value-of select=".//tei:graphic/@url"/></xsl:attribute>
-							<xsl:attribute name="width">180px</xsl:attribute>
-						</xsl:element>
+		<xsl:choose>
+			<xsl:when test="@type='noteAnchor'">
+				<xsl:if test="@target and @target!='' and $root//tei:note[@xml:id=substring-after(current()/@target,'#')]">
+					<xsl:for-each select="$root//tei:note[@xml:id=substring-after(current()/@target,'#')]">
+						<xsl:call-template name="notePopup"/>
 					</xsl:for-each>
-					<!-- aggiungere riferimento ad entita specifica e relative info  -->
-				</xsl:element>
-			</xsl:element>
-		</xsl:if>
+				</xsl:if>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:if test="@target">
+					<xsl:element name="span">
+						<xsl:attribute name="class">popup image</xsl:attribute>
+						<xsl:element name="span">
+							<xsl:attribute name="class">trigger</xsl:attribute>
+							<xsl:element name="i">
+								<xsl:attribute name="class">fa fa-picture-o</xsl:attribute>
+							</xsl:element>
+						</xsl:element>
+						<xsl:element name="span">
+							<xsl:attribute name="class">tooltip</xsl:attribute>
+							<xsl:element name="span"><xsl:attribute name="class">before</xsl:attribute></xsl:element>
+							<xsl:for-each select="$root//tei:item[@xml:id=current()/@target]">
+								<xsl:element name="img">
+									<xsl:attribute name="src">data/input_data/<xsl:value-of select=".//tei:graphic/@url"/></xsl:attribute>
+									<xsl:attribute name="width">180px</xsl:attribute>
+								</xsl:element>
+							</xsl:for-each>
+							<!-- aggiungere riferimento ad entita specifica e relative info  -->
+						</xsl:element>
+					</xsl:element>
+				</xsl:if>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	
 	<!-- QUOTE Quotes -->

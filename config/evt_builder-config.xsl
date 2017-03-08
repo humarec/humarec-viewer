@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xsl:stylesheet xpath-default-namespace="http://www.tei-c.org/ns/1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
@@ -41,19 +42,23 @@
 	<!-- EN: Index title -->
 	<!-- IT: Titolo edizione -->
 	<!-- default: 'Codex Viewer' -->
-	<xsl:param name="index_title" select="'Humarec Manuscript Viewer'"/>
+	<xsl:param name="index_title" select="'Codex Viewer'"/>
 	
 	<!-- EN: Welcome Message -->
 	<!-- IT: Messaggio di benvenuto -->
 	<!-- default: 'Welcome to an edition created with EVT' -->
 	<xsl:param name="welcomeMsg">
 		<div>
-			<p class="title main">Welcome to an edition created by Vital-DH@Vital-IT with EVT!</p> 
+			<p class="title main">Welcome to an edition created with EVT!</p> 
 		</div>
-		<div>This is a work in progress.
+		<div>This archive includes a few examples of editions created using EVT, 
+			by default you are showed a small excerpt of the 
+			<a href="http://pelavicino.labcd.unipi.it/" target="blank">
+				Codice Pelavicino Digitale edition</a>.
 		</div>
 		<div>It is recommended to go to full screen mode so that all available screen space is used to show the manuscript images and the transcription text.</div>
-		
+		<div>For more information refer to the EVT Manual in the "doc" folder. 
+			If you have any suggestions or spot an error/bug please contact us at <a href="mailto:evt.developers@gmail.com">evt.developers@gmail.com</a></div>
 	</xsl:param>
 	
 	<!-- EN: Hide/Show scans -->
@@ -68,12 +73,12 @@
 	<!-- EN: Set text in badge -->
 	<!-- IT: Imposta testo del badge -->
 	<!-- ex: alpha, beta, stable etc -->	
-	<xsl:param name="badge_text" select="'SAMPLE'"/>
+	<xsl:param name="badge_text" select="'DIGITAL'"/>
 	
 	<!-- EN: On/Off doubleview -->
 	<!-- IT: Attiva/Disattiva vista doppia pagina -->
 	<!-- default: true() -->
-	<xsl:param name="double_view" select="false()"/>
+	<xsl:param name="double_view" select="true()"/>
 	
 	<!-- ################ -->
 	<!-- PREFATORY MATTER -->
@@ -87,7 +92,7 @@
 	<!-- EN: On/Off Front Information -->
 	<!-- IT: Attiva/Disattiva Front Information -->
 	<!-- default: true() -->
-	<xsl:param name="frontInfo" select="false()"/>
+	<xsl:param name="frontInfo" select="true()"/>
 	
 	<!-- EN: On/Off Manuscript Description -->
 	<!-- IT: Attiva/Disattiva Descrizione del manoscritto-->
@@ -129,7 +134,9 @@
 		<!-- EN: To add a new edition it is necessary to add a new line here and -forcedly- a declaration concerning output file in the modules/evt_builder-main.xsl file, under the <xsl:if test="$edition_array[2]!=''" condition>
 				For instance: <edition>New_edition</edition> -->
 		<!-- IT: Per aggiungere una nuova edizione, bisognerà inserire una nuova riga qui e -necessariamente- la dichiarazione per i file di output nel file modules/evt_builder-main.xsl, sotto la condizione <xsl:if test="$edition_array[2]!=''">
-				Esempio: <edition>Nuova_edizione</edition> -->    
+			
+		Esempio: <edition>Nuova_edizione</edition> -->   
+		<edition>_greek_Interpretative</edition>
 	</xsl:variable>
 	
 	<!-- EN: It is possibile to customize the prefix used in the creation of the classes of the html elements of the edition -->
@@ -171,11 +178,10 @@
 				then(//tei:body/tei:div[@subtype='edition_text']/name()) 
 			else(//tei:text/tei:body/name() ))"/>
 	
-	
 	<!-- EN: Indicate the maximum depth of pb/lb with relatively to the element stated in the variable $start_split-->
 	<!-- IT: Indica la profondità massima dei pb/lb rispetto all'elemento inserito della variabile $start_split-->
 	<xsl:variable name="start_split_depth" select="//node()[name()=$start_split]/count(ancestor-or-self::node())"/>
-	<xsl:variable name="max_depth" as="xs:integer" select="max(((max(//tei:pb/count(ancestor-or-self::node())) - //node()[name()=$start_split]/count(ancestor-or-self::node())), (max(//tei:lb/count(ancestor-or-self::node())) - //node()[name()=$start_split]/count(ancestor-or-self::node()))))"/>
+	<xsl:variable name="max_depth" as="xs:integer" select="max(((max(//tei:pb/count(ancestor-or-self::node())) - //node()[name()=$start_split]/count(ancestor-or-self::node())), (max(//tei:lb/count(ancestor-or-self::node())) - //node()[name()=$start_split]/count(ancestor-or-self::node())), (max(//tei:cb/count(ancestor-or-self::node())) - //node()[name()=$start_split]/count(ancestor-or-self::node()))))"/>
 	<!-- EN: Highest depth of a pb relatively to the body: max(//tei:pb/count(ancestor-or-self::node())) - //tei:body/count(ancestor-or-self::node()) 
 		     Highest depth of a lb relatively to the body: max(//tei:lb/count(ancestor-or-self::node())) - //tei:body/count(ancestor-or-self::node())
 	-->
@@ -234,7 +240,7 @@
 	<!-- EN: Show/Hide Hotspot Button in interface -->
 	<!-- IT: Mostra/Nascondi pulsante Hotspot nell'interfaccia web -->
 	<!-- default: true() -->
-	<xsl:param name="hs_button" select="true()"/>
+	<xsl:param name="hs_button" select="false()"/>
 	
 	<!-- EN: Show/Hide Magnifier Button in interface -->
 	<!-- IT: Mostra/Nascondi pulsante Lente di ingrandimento nell'interfaccia web -->
@@ -265,7 +271,7 @@
     <!-- EN: Choose whether or not having a tooltip on pages option showing the belonging document  -->
     <!-- IT: Scegli se avere un tooltip sulle opzioni delle pagine che mostra il/i documento/i di appartenenza -->
     <!-- default: false() -->
-    <xsl:param name="pp_selector_doc_tooltip" select="false()"/>
+    <xsl:param name="pp_selector_doc_tooltip" select="true()"/>
 
 	<!-- EN: On/Off Search -->
 	<!-- IT: Attiva/Disattiva Ricerca -->
@@ -280,7 +286,7 @@
 	<!-- EN: On/Off Document Navigation -->
 	<!-- IT: Attiva/Disattiva navigazione per documento -->
 	<!-- default: false() -->
-	<xsl:param name="document_navigation" select="false()"/>
+	<xsl:param name="document_navigation" select="true()"/>
 	
 	<!-- LISTS -->
 	
@@ -294,7 +300,7 @@
 	<!-- default: true() -->
 	<xsl:param name="list_place" select="true()"/>
 	
-	<!-- EN: On/Off organizations list -->
+	<!-- EN: On/Off orgName list -->
 	<!-- IT: Attiva/disattiva lista organizzazioni -->
 	<!-- default: true() -->
 	<xsl:param name="list_org" select="true()"/>
@@ -306,12 +312,12 @@
 			 Per rimuovere un elemento basta eliminare tutto l'elemento di interesse.
 			 Per aggiungere un elemento alla lista basta sapere che il tag fa riferimento alla classe data all'elemento html con il quale sono state marcate le parole "particolari" da selezionare. -->
 	<xsl:variable name="lists" as="element()*">
-	<!--	<persName/>
+		<persName/>
 		<placeName/>
 		<roleName/>
 		<measure/>
 		<date/>
-		<orgName/> -->
+		<orgName/>
 	</xsl:variable>
 	
 	<!-- EN: Information about EVT -->

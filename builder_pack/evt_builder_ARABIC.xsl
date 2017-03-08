@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Copyright (C) 2013-2017 the EVT Development Team.
+    
+    EVT 1 is free software: you can redistribute it 
+    and/or modify it under the terms of the 
+    GNU General Public License version 2
+    available in the LICENSE file (or see <http://www.gnu.org/licenses/>).
+    
+    EVT 1 is distributed in the hope that it will be useful, 
+    but WITHOUT ANY WARRANTY; without even the implied 
+    warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+    See the GNU General Public License for more details. 
+-->
+<!-- few changes made by Sara Schulthess 03/04/2017-->
 <xsl:stylesheet xpath-default-namespace="http://www.tei-c.org/ns/1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" 
@@ -24,11 +38,11 @@
 	</xd:doc>
 
 	<!-- Basic -->
-	<xsl:include href="modules/evt_builder-main_ARABIC.xsl"/>
-	<xsl:include href="../config/evt_builder-config_ARABIC.xsl"/>
+	<xsl:include href="modules/evt_builder-main.xsl"/>
+	<xsl:include href="../config/evt_builder-config_arabic.xsl"/>
 
 	<xsl:include href="modules/fundamental_units/evt_builder-copy_and_call_main.xsl"/>
-	<xsl:include href="modules/fundamental_units/evt_builder-structure_ARABIC.xsl"/>
+	<xsl:include href="modules/fundamental_units/evt_builder-structure.xsl"/>
 	
 	<!-- Image-Text link & HotSpot-->
 	<xsl:include href="modules/fundamental_units/evt-builder_imagetext-link_hotspot.xsl"/>
@@ -42,7 +56,7 @@
 	<xsl:include href="modules/html_build/evt_builder-function.xsl"/>
 		
 	<!-- Elements -->
-	<xsl:include href="modules/elements/evt_builder-divLine_ARABIC.xsl"/>
+	<xsl:include href="modules/elements/evt_builder-divLine.xsl"/>
 	<xsl:include href="modules/elements/evt_builder-header-info.xsl"/>
 	<xsl:include href="modules/elements/evt_builder-ms-desc.xsl"/>
 	

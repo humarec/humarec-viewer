@@ -242,7 +242,7 @@
 				<body>
 					<pb xml:id="Gr-Z_0011-00379_155v" facs="#Gr-Z_0011-00379_155v" n="155v"/>
 					<p>
-						<cb xml:id="Gr-Z_0011-00379_155v_gr"/>
+						<cb n = "1" rend = "3col_layout" xml:id="Gr-Z_0011-00379_155v_gr"/>
 						<lb facs="#Gr-Z_0011-00379_155v_gr_line_24" n="24" xml:id="Gr-Z_0011-00379_155v_gr_lb_24"/>
 						ΠΡΟΣΚΟΡΙΝΘΙΟΥΣΠΡΩΤΗΣ
 						<lb facs="#Gr-Z_0011-00379_155v_gr_line_25" n="25" xml:id="Gr-Z_0011-00379_155v_gr_lb_25"/>Παῦλος
@@ -252,7 +252,7 @@
 							<abbr>θυ</abbr><expan>θεοῦ</expan> · καὶ
 						<lb facs="#Gr-Z_0011-00379_155v_gr_line_27" n="27" xml:id="Gr-Z_0011-00379_155v_gr_27"/>σωσθένης
 						ὁ ἀδελφὸς <milestone unit="verse" n="1:2"/> τῆ ἐκ <cb
-							xml:id="Gr-Z_0011-00379_155v_la"/>
+							n = "2" rend = "3col_layout" xml:id="Gr-Z_0011-00379_155v_la"/>
 						<lb facs="#Gr-Z_0011-00379_155v_la_line_21" n="21" xml:id="Gr-Z_0011-00379_155v_la_lb_21"/>
 						nos · Incipit episto
 						<lb facs="#Gr-Z_0011-00379_155v_la_line_22" n="22" xml:id="Gr-Z_0011-00379_155v_la_lb_22"/>la
@@ -265,7 +265,7 @@
 						christi iesu per volunta
 						<lb facs="#Gr-Z_0011-00379_155v_la_line_26" n="26" xml:id="Gr-Z_0011-00379_155v_la_lb_26"/>
 						tem dei et sosthenes frater · <milestone unit="verse" n="1:2"/> ecclesiae
-							<cb xml:id="Gr-Z_0011-00379_155v_ar"/>
+						<cb  n = "3" rend = "3col_layout" xml:id="Gr-Z_0011-00379_155v_ar"/>
 						<lb facs="#Gr-Z_0011-00379_155v_ar_line_23" n="23" xml:id="Gr-Z_0011-00379_155v_ar_lb_23"/>
 						و هذه رِسَاله بولس الحواري
 						<lb facs="#Gr-Z_0011-00379_155v_ar_line_24" n="24" xml:id="Gr-Z_0011-00379_155v_ar_lb_24"/>
@@ -278,7 +278,7 @@
 						و من سُستان الاخ </p>
 
 					<pb xml:id="Gr-Z_0011-00379_156r" facs="#Gr-Z_0011-00379_156r" n="156r"/>
-					<p><cb xml:id="Gr-Z_0011-00379_156r_gr"/>
+					<p><cb n = "1" rend = "3col_layout"  xml:id="Gr-Z_0011-00379_156r_gr"/>
 						<lb facs="#Gr-Z_0011-00379_156r_gr_line_1" n="1" xml:id="Gr-Z_0011-00379_156r_gr_lb_1"/>
 						κλησία τοῦ <abbr>θυ</abbr>
 						<expan>θεοῦ</expan> τῆ οὑση ἐν κο
@@ -362,7 +362,7 @@
 						<expan>κυρίου</expan> ἡμῶν : αρχ <lb facs="#Gr-Z_0011-00379_156r_gr_line_27" n="27" xml:id="Gr-Z_0011-00379_156r_gr_lb_27"/>
 						<milestone unit="verse" n="1:10"/> Παρακαλῶ δὲ ὑμᾶς ἀδελ
 						<lb facs="#Gr-Z_0011-00379_156r_gr_line_28" n="28" xml:id="Gr-Z_0011-00379_156r_gr_lb_28"/>
-						φοί · διὰ τοῦ ὀνόματος τοῦ <cb xml:id="Gr-Z_0011-00379_156r_la"/>
+						φοί · διὰ τοῦ ὀνόματος τοῦ <cb n = "2" rend = "3col_layout"  xml:id="Gr-Z_0011-00379_156r_la"/>
 						<lb facs="#Gr-Z_0011-00379_156r_la_line_1" n="1" xml:id="Gr-Z_0011-00379_156r_la_lb_1"/>
 						dei quae est corinthi
 						<lb facs="#Gr-Z_0011-00379_156r_la_line_2" n="2" xml:id="Gr-Z_0011-00379_156r_la_lb_2"/>
@@ -419,7 +419,7 @@
 							unit="verse" n="1:10"/> Obsecro autem vos fratres
 						<lb facs="#Gr-Z_0011-00379_156r_la_line_28" n="28" xml:id="Gr-Z_0011-00379_156r_la_lb_28"/>per
 						nomen 
-						<cb xml:id="Gr-Z_0011-00379_156r_ar"/>
+						<cb n = "1" rend = "3col_layout" xml:id="Gr-Z_0011-00379_156r_ar"/>
 						
 						<lb facs="#Gr-Z_0011-00379_156r_ar_line_1" n="1" xml:id="Gr-Z_0011-00379_156r_ar_lb_1"/>	<milestone unit="verse" n="1:2"/> بيعه اللّه التى بقورنثه //
 						<lb facs="#Gr-Z_0011-00379_156r_ar_line_2" n="2" xml:id="Gr-Z_0011-00379_156r_ar_lb_2"/>	الي المقدّسين بيسوع المسيح //

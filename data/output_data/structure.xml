@@ -10,8 +10,9 @@
       <listOrg active="1" lang="def">LIST_ORG</listOrg>
    </liste>
    <editions>
-      <edition>arabic_diplomatic</edition>
-      <edition>arabic_normalized</edition>
+      <edition>greek_diplomatic</edition>
+      <edition>greek_normalized</edition> <edition>latin_normalized</edition> <edition>arabic_diplomatic</edition> <edition>arabic_normalized</edition><edition>greek_diplomatic</edition>
+      <edition>greek_normalized</edition> <edition>latin_normalized</edition> <edition>arabic_diplomatic</edition> <edition>arabic_normalized</edition>
    </editions>
    <textpage>
       <text n="Paul_transcript_1Cor" label="1 Cor">
@@ -20,6 +21,7 @@
       </text>
       <text n="Paul_transcript_1Thess" label="1 Thess">
          <pb n="246r">Gr-Z_0011-00379_246r</pb>
+         <pb n="246v">Gr-Z_0011-00379_246v</pb>
       </text>
    </textpage>
    <pages>
@@ -29,6 +31,9 @@
       </pair>
       <pair>
          <pb n="246r">Gr-Z_0011-00379_246r</pb>
+      </pair>
+      <pair>
+         <pb n="246v">Gr-Z_0011-00379_246v</pb>
       </pair>
    </pages>
 </xml>
