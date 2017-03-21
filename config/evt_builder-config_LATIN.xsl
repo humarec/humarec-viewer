@@ -42,7 +42,7 @@
 	<!-- EN: Index title -->
 	<!-- IT: Titolo edizione -->
 	<!-- default: 'Codex Viewer' -->
-	<xsl:param name="index_title" select="'Humarec Manuscript Viewer'"/>
+	<xsl:param name="index_title" select="'Humarec Manuscript Viewer.'"/>
 	<xsl:param name="index_subtitle"><div><p>A Vital-DH@Vital-IT project.</p><p> The images are property of the Marciana Library, all rights reserved.</p></div></xsl:param>
 	
 	

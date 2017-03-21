@@ -293,6 +293,9 @@
 								<div id="badge_title"><xsl:value-of select="$badge_text"/></div>
 							</xsl:if>
 						</div>
+						
+						<div id="home_subtitle"><xsl:value-of select="$index_subtitle"/></div>
+						
 						<div class='concave'>
 							<div class='extTop'>
 								<div class='topleftconcave'></div>

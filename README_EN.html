@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Made with Remarkable!
+  </title>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/github.min.css" rel="stylesheet"/>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <style type="text/css">
+   body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;background-color:#fff;padding:10px 15px;}strong{font-weight:700;}h1{font-size:2em;margin:.67em 0;text-align:center;}h2{font-size:1.75em;}h3{font-size:1.5em;}h4{font-size:1.25em;}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1;}h1,h2{border-bottom:1px solid #eee;}hr{height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #ddd;}a{color:#4183C4;}a.absent{color:#c00;}ol,ul{padding-left:15px;margin-left:5px;}ol{list-style-type:lower-roman;}table{padding:0;}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0;}table tr:nth-child(2n){background-color:#aaa;}table tr th{font-weight:700;border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px;}table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px;}table tr td :first-child,table tr th :first-child{margin-top:0;}table tr td:last-child,table tr th :last-child{margin-bottom:0;}img{max-width:100%;}code{padding:0 5px;background-color:#d3d3d3;}blockquote{padding: 0 15px;border-left:4px solid #ccc;}
+  </style>
+ </head>
+ <body>
+  <h1>
+   Introduction
+  </h1>
+  <p>
+   <br/>
+  </p>
+  <h3>
+   About EVT
+  </h3>
+  <p>
+   EVT (Edition Visualization Technology) is a software for creating and browsing digital editions of manuscripts based on text encoded according to the TEI XML (
+   <a href="http://www.tei-c.org/">
+    http://www.tei-c.org/
+   </a>
+   ) schemas and Guidelines. This tool was born as part of the VBD (Digital Vercelli Book:
+   <a href="http://vbd.humnet.unipi.it/">
+    http://vbd.humnet.unipi.it/
+   </a>
+   ) project in order to allow the creation of a digital edition of the Vercelli Book, a parchment codex of the late tenth century, now preserved in the Archivio e Biblioteca Capitolare of Vercelli and regarded as one of the four most important manuscripts of the Anglo-Saxon period as regards the transmission of poetic texts in the Old English language.
+   <br/>
+   To ensure that it will be working on all the most recent web browsers, and for as long as possible on the World Wide Web itself, EVT is built on open and standard web technologies such as HTML, CSS and JavaScript. Specific features, such as the magnifying lens, are entrusted to jQuery plug-ins, again chosen among the open source and best supported ones to reduce the risk of future incompatibilities. The general architecture of the software, in any case, is modular, so that any component which may cause trouble or turn out to be not completely up to the task can be replaced easily.
+  </p>
+  <h3>
+   How it works
+  </h3>
+  <p>
+   The basic idea of EVT is very similar to the modus operandi which is commonly used to convert TEI XML documents in HTML: when the main style sheet is applied to the document, it starts a processing which ends with a website containing the digital edition of the manuscript. Our ideal goal, in fact, is to have a simple, very user-friendly drop-in tool, requiring little work and/or knowledge of anything beyond XML from the editor. To reach this goal, EVT is based on a modular structure where a single style sheet (evt_builder.xsl) starts a chain of XSLT 2.0 transformations calling in turn all the other modules; the latter belong to two general categories: those devoted to building the HTML site, and the XML processing ones, which extract the edition text lying between folios using the
+   <code>
+    &lt;pb/&gt;
+   </code>
+   element and format it according to the edition level. All XSLT modules live inside the builder_pack folder, in order to have a clean and well organized directory hierarchy.
+  </p>
+  <h3>
+   Main features
+  </h3>
+  <p>
+   At the present moment EVT can be used to create image-based editions with two possible edition levels: diplomatic and diplomatic-interpretative. This means that a transcription encoded using elements of the TEI transcr module (see chapter 11 Representation of Primary Sources in the Guidelines) should already be compatible with EVT, or require only minor changes to be made compatible. A search functionality has been added for all edition levels, and EVT also supports named entities and the handling of the corresponding lists. The Vercelli Book transcription is following the standard TEI schemas with no custom elements or attributes added: our tests with similarly encoded texts showed a high grade of compatibility. A critical edition level is being studied and it will be added in the future.
+   <br/>
+   On the image side, several features such as a magnifying lens, a general zoom, image-text linking and more are already available. The image-text feature is inspired by Martin Holmes’ Image Markup Tool software and was implemented in XSLT and CSS by one of the students collaborating to the project; all other features are achieved by using jQuery plugins.
+  </p>
+  <hr/>
+  <p>
+   <br/>
+  </p>
+  <h1>
+   A short guide to EVT
+  </h1>
+  <p>
+   <br/>
+  </p>
+  <h3>
+   Installation
+  </h3>
+  <p>
+   EVT doesn't need an installation process: just uncompress the archive in a suitable folder and you are ready to go.
+  </p>
+  <h3>
+   Configuration
+  </h3>
+  <p>
+   There are several ways to customize EVT, the most important one is to modify the config/evt_builder-conf.xsl file to configure the existing parameters so that the UI layout matches your edition data. Refer to the EVT manual (doc folder) for more information about this file and other ways of customizing EVT's output.
+  </p>
+  <p>
+   <strong>
+    <em>
+     IMPORTANT
+    </em>
+   </strong>
+   : in this release you will find in the config folder not only a default evt_builder-conf.xsl file, which has been used for the ready-to-go edition available when you install the software, but also three different versions of this configuration tool:
+  </p>
+  <ul>
+   <li>
+    <p>
+     evt_builder-config_CP.xsl: configuration file for the Codice Pelavicino example edition
+    </p>
+   </li>
+   <li>
+    <p>
+     evt_builder-config_DOTR.xsl: configuration file for the Dream of the Rood example edition
+    </p>
+   </li>
+   <li>
+    <p>
+     evt_builder-config_ETexamples.xsl: configuration file for the example edition based on the TEI embedded transcription method
+    </p>
+   </li>
+  </ul>
+  <p>
+   Since each example edition has specific options enabled in this file, it is advisable to copy it with the standard evt_builder-conf.xsl name without deleting the original file, so that the initial configuration will always be available.
+  </p>
+  <h3>
+   EVT Manual
+  </h3>
+  <p>
+   In the "doc" folder you will find a preliminary version of the EVT manual, this should be your main reference to customize and use this tool.
+  </p>
+  <h3>
+   Feedback
+  </h3>
+  <p>
+   Please send all comments, suggestions, bug reports etc. to
+   <a href="mailto:roberto.rossellidelturco@gmail.com">roberto.rossellidelturco@gmail.com</a> or to <a href="mailto:evt.developers@gmail.com">evt.developers@gmail.com</a>
+   .
+  </p>
+ </body>
+</html>

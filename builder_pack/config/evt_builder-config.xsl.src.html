@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title>XML source view</title><link rel="stylesheet" type="text/css" href="../../xmlverbatim.css"></link></head><body class="xmlverb-default"><tt>
+<!-- converted by xmlverbatim.xsl 1.1, (c) O. Becker -->
+<div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="xmlverb-default">&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e1">stylesheet</a></span><span class="xmlverb-ns-name"> xmlns:xsl</span>="<span class="xmlverb-ns-uri">http://www.w3.org/1999/XSL/Transform</span>"<span class="xmlverb-ns-name"> xmlns:xs</span>="<span class="xmlverb-ns-uri">http://www.w3.org/2001/XMLSchema</span>"<span class="xmlverb-ns-name"> xmlns:eg</span>="<span class="xmlverb-ns-uri">http://www.tei-c.org/ns/Examples</span>"<span class="xmlverb-ns-name"> xmlns:xd</span>="<span class="xmlverb-ns-uri">http://www.pnp-software.com/XSLTdoc</span>"<span class="xmlverb-ns-name"> xmlns:fn</span>="<span class="xmlverb-ns-uri">http://www.w3.org/2005/xpath-functions</span>"<span class="xmlverb-ns-name"> xmlns:tei</span>="<span class="xmlverb-ns-uri">http://www.tei-c.org/ns/1.0</span>"<span class="xmlverb-ns-name"> xmlns</span>="<span class="xmlverb-ns-uri">http://www.w3.org/1999/xhtml</span>" <span class="xmlverb-attr-name">xpath-default-namespace</span>="<span class="xmlverb-attr-content">http://www.tei-c.org/ns/1.0</span>" <span class="xmlverb-attr-name">version</span>="<span class="xmlverb-attr-content">2.0</span>" <span class="xmlverb-attr-name">exclude-result-prefixes</span>="<span class="xmlverb-attr-content">#all</span>"&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span><div class="xd">
+	
+	&lt;<span class="xmlverb-element-nsprefix">xd</span>:<span class="xmlverb-element-name"><a name="d22e3">doc</a></span> <span class="xmlverb-attr-name">type</span>="<span class="xmlverb-attr-content">stylesheet</span>"&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-nsprefix">xd</span>:<span class="xmlverb-element-name"><a name="d22e5">short</a></span>&gt;<span class="xmlverb-text"><br></br>
+                        EN: This file collects parameters and configurable variables used in the other modules.<br></br>
+                        IT: Questo file è una collezione di parametri e variabili configurabili, usati negli altri moduli.<br></br>
+                </span>&lt;/<span class="xmlverb-element-nsprefix">xd</span>:<span class="xmlverb-element-name">short</span>&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;/<span class="xmlverb-element-nsprefix">xd</span>:<span class="xmlverb-element-name">doc</span>&gt;</div><span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> GLOBAL </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: The global variable $root is in the file evt_builder-main.xsl</span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: La variabile globale $root si trova nel file evt_builder-main.xsl</span>--&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> Parameters </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: It is possible to modify these prefixes so that they point to a custom web site, for instance:<br></br>
+                &lt;xsl:param name="filePrefix" select="'http://tuosito.it/evtb'"/&gt;<br></br>
+        </span>--&gt;<span class="xmlverb-text">        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: E' possibile modificare i prefissi per puntare ad un server personalizzato, ad esempio:<br></br>
+                &lt;xsl:param name="filePrefix" select="'http://tuosito.it/evtb'"/&gt;<br></br>
+        </span>--&gt;<span class="xmlverb-text">        <br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e22">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">mainPrefix</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">'.'</span>" /&gt;<span class="xmlverb-text"> </span>&lt;!--<span class="xmlverb-comment"> index </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e26">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">filePrefix</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">'../../..'</span>" /&gt;<span class="xmlverb-text"> </span>&lt;!--<span class="xmlverb-comment"> file path </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e30">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">dataPrefix</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">'../..'</span>" /&gt;<span class="xmlverb-text"> </span>&lt;!--<span class="xmlverb-comment"> page </span>--&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e35">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">imageExt</span>"&gt;<span class="xmlverb-text">jpg</span>&lt;/<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name">param</span>&gt;<span class="xmlverb-text"> </span>&lt;!--<span class="xmlverb-comment"> images extension </span>--&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Main web site for digital edition </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Sito web principale dell'edizione </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: '' </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e46">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">webSite</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">''</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Index title </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Titolo edizione </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: 'Codex Viewer' </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e55">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">index_title</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">'Codex Viewer'</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Welcome Message </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Messaggio di benvenuto </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: 'Welcome to an edition created with EVT' </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e63">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">welcomeMsg</span>"&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e65">div</a></span>&gt;<span class="xmlverb-text"><br></br>
+                        </span>&lt;<span class="xmlverb-element-name"><a name="d22e67">p</a></span> <span class="xmlverb-attr-name">class</span>="<span class="xmlverb-attr-content">title main</span>"&gt;<span class="xmlverb-text">Welcome to an edition created with EVT!</span>&lt;/<span class="xmlverb-element-name">p</span>&gt;<span class="xmlverb-text"> <br></br>
+                </span>&lt;/<span class="xmlverb-element-name">div</span>&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e71">div</a></span>&gt;<span class="xmlverb-text">This archive includes a few examples of editions created using EVT, <br></br>
+                        by default you are showed a small excerpt of the <br></br>
+                        </span>&lt;<span class="xmlverb-element-name"><a name="d22e73">a</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">http://pelavicino.labcd.unipi.it/</span>" <span class="xmlverb-attr-name">target</span>="<span class="xmlverb-attr-content">blank</span>"&gt;<span class="xmlverb-text"><br></br>
+                                Codice Pelavicino Digitale edition</span>&lt;/<span class="xmlverb-element-name">a</span>&gt;<span class="xmlverb-text">.<br></br>
+                </span>&lt;/<span class="xmlverb-element-name">div</span>&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e77">div</a></span>&gt;<span class="xmlverb-text">It is recommended to go to full screen mode so that all available screen space is used to show the manuscript images and the transcription text.</span>&lt;/<span class="xmlverb-element-name">div</span>&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e80">div</a></span>&gt;<span class="xmlverb-text">For more information refer to the EVT Manual in the "doc" folder. <br></br>
+                        If you have any suggestions or spot an error/bug please contact us at </span>&lt;<span class="xmlverb-element-name"><a name="d22e82">a</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">mailto:evt.developers@gmail.com</span>"&gt;<span class="xmlverb-text">evt.developers@gmail.com</span>&lt;/<span class="xmlverb-element-name">a</span>&gt;&lt;/<span class="xmlverb-element-name">div</span>&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;/<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name">param</span>&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Hide/Show scans </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Nascondi/Mostra scansioni </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e93">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">image_frame</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Hide/Show badge </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Nascondi/Mostra badge </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e101">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">badge</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Set text in badge </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Imposta testo del badge </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> ex: alpha, beta, stable etc </span>--&gt;<span class="xmlverb-text">        <br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e110">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">badge_text</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">'DIGITAL'</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: On/Off doubleview </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Attiva/Disattiva vista doppia pagina </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e118">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">double_view</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> ################ </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> PREFATORY MATTER </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> ################ </span>--&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: On/Off regesto </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Attiva/Disattiva regesto </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: false() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e133">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">regesto</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">false()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: On/Off Front Information </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Attiva/Disattiva Front Information </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e141">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">frontInfo</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: On/Off Manuscript Description </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Attiva/Disattiva Descrizione del manoscritto</span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e150">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">msDesc</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: On/Off Header information </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Attiva/Disattiva Informazioni generali </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e158">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">headerInfo</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> ############## </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EDITION LEVELS </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> ############## </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: To use it in your code:<br></br>
+                &lt;xsl:value-of select="$edition_array[n]" /&gt;        </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Per l'utilizzo nel codice:<br></br>
+                &lt;xsl:value-of select="$edition_array[n]" /&gt;        </span>--&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: It is possible to skip production of pages for a specific edition simply removing the textual part of the corresponding item. </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: E' possibile rimuovere la produzione di pagine di una determinata edizione semplicemente rimuovendo la parte testuale dell'item corrispondente. </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e175">variable</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">edition_array</span>" <span class="xmlverb-attr-name">as</span>="<span class="xmlverb-attr-content">element()*</span>"&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e177">edition</a></span>&gt;<span class="xmlverb-text">Diplomatic</span>&lt;/<span class="xmlverb-element-name">edition</span>&gt;<span class="xmlverb-text"> <br></br>
+                </span>&lt;!--<span class="xmlverb-comment"> EN: If you have diplomatic edition put &lt;edition&gt;Diplomatic&lt;/edition&gt;.  <br></br>
+                                  If you DON'T have diplomatic edition put &lt;edition&gt;&lt;/edition&gt; </span>--&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;!--<span class="xmlverb-comment"> IT: Se si ha l'edizione diplomatica scrivere &lt;edition&gt;Diplomatic&lt;/edition&gt;.  <br></br>
+                                  Se NON si ha l'edizione diplomatica mettere &lt;edition&gt;&lt;/edition&gt; </span>--&gt;<span class="xmlverb-text"><br></br>
+                <br></br>
+                </span>&lt;!--<span class="xmlverb-comment"> EN: For processing in the modules: $edition_array[1] </span>--&gt;<span class="xmlverb-text"> </span>&lt;!--<span class="xmlverb-comment"> IT: Per l'elaborazione nei moduli: $edition_array[1] </span>--&gt;<span class="xmlverb-text"><br></br>
+                <br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e189">edition</a></span>&gt;<span class="xmlverb-text">Interpretative</span>&lt;/<span class="xmlverb-element-name">edition</span>&gt;<span class="xmlverb-text">        <br></br>
+                </span>&lt;!--<span class="xmlverb-comment"> EN: If you have diplomatic edition put &lt;edition&gt;Interpretative&lt;/edition&gt;.  <br></br>
+                                  If you don't have diplomatic edition put &lt;edition&gt;&lt;/edition&gt; </span>--&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;!--<span class="xmlverb-comment"> IT: Se si ha l'edizione interpretativa scrivere &lt;edition&gt;Interpretative&lt;/edition&gt;.  <br></br>
+                                  Se NON si ha l'edizione interpretativa mettere &lt;edition&gt;&lt;/edition&gt; </span>--&gt;<span class="xmlverb-text"><br></br>
+                <br></br>
+                </span>&lt;!--<span class="xmlverb-comment"> EN: For processing in the modules: $edition_array[2] </span>--&gt;<span class="xmlverb-text"> </span>&lt;!--<span class="xmlverb-comment"> IT: Per l'elaborazione nei moduli: $edition_array[2] </span>--&gt;<span class="xmlverb-text">                                        <br></br>
+                <br></br>
+                </span>&lt;!--<span class="xmlverb-comment"> EN: To add a new edition it is necessary to add a new line here and -forcedly- a declaration concerning output file in the modules/evt_builder-main.xsl file, under the &lt;xsl:if test="$edition_array[2]!=''" condition&gt;<br></br>
+                                For instance: &lt;edition&gt;New_edition&lt;/edition&gt; </span>--&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;!--<span class="xmlverb-comment"> IT: Per aggiungere una nuova edizione, bisognerà inserire una nuova riga qui e -necessariamente- la dichiarazione per i file di output nel file modules/evt_builder-main.xsl, sotto la condizione &lt;xsl:if test="$edition_array[2]!=''"&gt;<br></br>
+                                Esempio: &lt;edition&gt;Nuova_edizione&lt;/edition&gt; </span>--&gt;<span class="xmlverb-text">    <br></br>
+        </span>&lt;/<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name">variable</span>&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: It is possibile to customize the prefix used in the creation of the classes of the html elements of the edition </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: E' possibile personalizzare il prefisso usato nella creazione delle classi degli elementi html di un edizione. </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e209">variable</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">ed_name1</span>"&gt;<span class="xmlverb-text">dipl</span>&lt;/<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name">variable</span>&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e212">variable</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">ed_name2</span>"&gt;<span class="xmlverb-text">interp</span>&lt;/<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name">variable</span>&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> Variable </span>--&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> Thumb image </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e220">variable</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">fb_thumb</span>"&gt;<span class="xmlverb-text">thumb_fb.jpg</span>&lt;/<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name">variable</span>&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"><br></br>
+        &lt;xsl:variable name="title" select="teiHeader/fileDesc/titleStmt/title" /&gt;<br></br>
+    &lt;xsl:variable name="author" select="teiHeader/fileDesc/titleStmt/author" /&gt;<br></br>
+    &lt;xsl:variable name="publisher" select="teiHeader/fileDesc/publicationStmt/publisher" /&gt;<br></br>
+    &lt;xsl:variable name="pubdate" select="teiHeader/fileDesc/publicationStmt/date" /&gt;<br></br>
+        </span>--&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Indicate the xml node that contains all the text to be transformed for each edition level </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Indicare il nodo xml che contiene il testo da trasformare per ogni livello di edizione </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment">&lt;xsl:variable name="ed_content" select="if(//tei:text/tei:group[@xml:id='group']) then(//tei:text/tei:group[@xml:id='group']/name()) else ( //tei:body/name() )"/&gt;</span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e231">variable</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">ed_content</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">if(//tei:text/tei:group) then(//tei:text/tei:group/name()) else ( //tei:text/name() )</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Starting point for the split of elements containing pb and lb </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Punto di partenza per la divisione degli elementi contententi pb/lb </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment">&lt;xsl:variable name="start_split" select="if(//tei:text/tei:group[@xml:id='group']) then(//tei:text/tei:group[@xml:id='group']/name()) else( if(//tei:body/tei:div[@subtype='edition_text']) then(//tei:body/tei:div[@subtype='edition_text']/name()) else(//tei:body/name()) )"/&gt;</span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> Retrocompatiblità gestita solo per documenti unitari </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e242">variable</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">start_split</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">if(//tei:text/tei:group) then(//tei:text/tei:group/name()) else( if(count(//tei:body/tei:div[@subtype='edition_text'])&amp;gt;1) then(//tei:body/tei:div[@subtype='edition_text']/name()) else(//tei:text/tei:body/name() ))</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Indicate the maximum depth of pb/lb with relatively to the element stated in the variable $start_split</span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Indica la profondità massima dei pb/lb rispetto all'elemento inserito della variabile $start_split</span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e248">variable</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">start_split_depth</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">//node()[name()=$start_split]/count(ancestor-or-self::node())</span>" /&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e250">variable</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">max_depth</span>" <span class="xmlverb-attr-name">as</span>="<span class="xmlverb-attr-content">xs:integer</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">max(((max(//tei:pb/count(ancestor-or-self::node())) - //node()[name()=$start_split]/count(ancestor-or-self::node())), (max(//tei:lb/count(ancestor-or-self::node())) - //node()[name()=$start_split]/count(ancestor-or-self::node())), (max(//tei:cb/count(ancestor-or-self::node())) - //node()[name()=$start_split]/count(ancestor-or-self::node()))))</span>" /&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Highest depth of a pb relatively to the body: max(//tei:pb/count(ancestor-or-self::node())) - //tei:body/count(ancestor-or-self::node()) <br></br>
+                     Highest depth of a lb relatively to the body: max(//tei:lb/count(ancestor-or-self::node())) - //tei:body/count(ancestor-or-self::node())<br></br>
+        </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> <br></br>
+                IT: Profondità massima di un pb rispetto a body: max(//tei:pb/count(ancestor-or-self::node())) - //tei:body/count(ancestor-or-self::node()) <br></br>
+                    Profondità massima di un lb rispetto a body: max(//tei:lb/count(ancestor-or-self::node())) - //tei:body/count(ancestor-or-self::node())<br></br>
+        </span>--&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: On/Off default Text Label generation from id <br></br>
+                     If false() you need to put your own xslt transformations in modules/elements/evt_builder-generate-text_label.xsl </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Attiva/Disattiva generazione standard dell'etichetta del selettore testuale in base all'id. <br></br>
+                     Se false() e' necessario aggiungere le proprie trasformazioni xslt nel file modules/elements/evt_builder-generate-text_label.xsl </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e261">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">defaulTextLabel</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> ################# </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> INTERFACE CONTROL </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> ################# </span>--&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> DEFAULT CONTENT SEEN </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Set default content on first load for left frame choosing between image or manuscript info <br></br>
+                        Possible values are: <br></br>
+                        - 'image' if you want to see the image on first load<br></br>
+                        - 'info'  if you want to see the manuscript info on first load<br></br>
+                        Any other value will work as 'image'.<br></br>
+        </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Indicare cosa visualizzare di default al primo caricamento nel frame sinistro: immagine o informazioni sul manoscritto <br></br>
+                        I valori possibili sono: <br></br>
+                        - 'image' se si vuole visualizzare l'immagine al primo caricamento<br></br>
+                        - 'info'  se si vogliono visualizzare le informazioni sul manoscritto al primo caricamento<br></br>
+                        Qualsiasi altro valore varrà come 'image'<br></br>
+        </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e278">variable</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">left_frame_default_content</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">'image'</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Set default content on first load for right frame choosing between text or text front info <br></br>
+                        Possible values are: <br></br>
+                        - 'text' if you want to see the text on first load<br></br>
+                        - 'info'  if you want to see the text front info on first load<br></br>
+                        Any other value will work as 'text'.<br></br>
+        </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Indicare cosa visualizzare di default al primo caricamento nel frame destro: testo o informazioni sul testo <br></br>
+                        I valori possibili sono: <br></br>
+                        - 'text' se si vuole visualizzare il testo al primo caricamento<br></br>
+                        - 'info'  se si vogliono visualizzare le informazioni sul testo al primo caricamento<br></br>
+                        Qualsiasi altro valore varrà come 'text'<br></br>
+        </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e284">variable</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">right_frame_default_content</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">'info'</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> BUTTONS PRESENCE AND POSITION </span>--&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Show/Hide Txt/Img Link Button in interface </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Mostra/Nascondi pulsante Txt/Img Link nell'interfaccia web </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e295">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">txtimg_link_button</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Show/Hide Hotspot Button in interface </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Mostra/Nascondi pulsante Hotspot nell'interfaccia web </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e303">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">hs_button</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">false()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Show/Hide Magnifier Button in interface </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Mostra/Nascondi pulsante Lente di ingrandimento nell'interfaccia web </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e312">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">mag_button</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Show/Hide Thumbnails Button in interface </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Mostra/Nascondi pulsante Thumbnails nell'interfaccia web </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e320">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">thumbs_button</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Show/Hide Edition level selector in interface </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Mostra/Nascondi selettore Livello/i Edizione nell'interfaccia web </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e329">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">edition_level_selector</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">false()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Choose page selector position </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Scegli posizione Selettore pagina </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> "left" or "right" | Default: "right" </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: right </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e339">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">pp_selector_pos</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">'right'</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Choose whether or not to group pages by document in the selector </span>--&gt;<span class="xmlverb-text"><br></br>
+    </span>&lt;!--<span class="xmlverb-comment"> IT: Scegli se raggruppare o meno le pagine per documento nel selettore apposito </span>--&gt;<span class="xmlverb-text"><br></br>
+    </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+    </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e348">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">pp_selector_doc_grouping</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+    <br></br>
+    </span>&lt;!--<span class="xmlverb-comment"> EN: Choose whether or not having a tooltip on pages option showing the belonging document  </span>--&gt;<span class="xmlverb-text"><br></br>
+    </span>&lt;!--<span class="xmlverb-comment"> IT: Scegli se avere un tooltip sulle opzioni delle pagine che mostra il/i documento/i di appartenenza </span>--&gt;<span class="xmlverb-text"><br></br>
+    </span>&lt;!--<span class="xmlverb-comment"> default: false() </span>--&gt;<span class="xmlverb-text"><br></br>
+    </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e356">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">pp_selector_doc_tooltip</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+<br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: On/Off Search </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Attiva/Disattiva Ricerca </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e365">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">search</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: On/Off Virtual Keyboard for search </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Attiva/Disattiva Tastiera virtuale per ricerca </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e373">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">virtual_keyboard_search</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">false()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: On/Off Document Navigation </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Attiva/Disattiva navigazione per documento </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: false() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e382">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">document_navigation</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> LISTS </span>--&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: On/Off persons list </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Attiva/disattiva lista persone </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e392">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">list_person</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: On/Off places list </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Attiva/disattiva lista luoghi </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e401">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">list_place</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: On/Off orgName list </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Attiva/disattiva lista organizzazioni </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> default: true() </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e409">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">list_org</span>" <span class="xmlverb-attr-name">select</span>="<span class="xmlverb-attr-content">true()</span>" /&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: It is possibile to personalize the elements in the filter select element that will select and highlight particular (groups of) words.<br></br>
+                         In order to remove an element from the list in the application just remove the element itself.<br></br>
+                         In order to add a new element to the list you simply need to know that the tag corresponds to the class name that has be given to the html element referring to the particular words to be selected. </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: E' possibile personalizzare gli elementi che compariranno nell'elenco dei filtri che selezionano particolari paroli o gruppi di parole. <br></br>
+                         Per rimuovere un elemento basta eliminare tutto l'elemento di interesse.<br></br>
+                         Per aggiungere un elemento alla lista basta sapere che il tag fa riferimento alla classe data all'elemento html con il quale sono state marcate le parole "particolari" da selezionare. </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e416">variable</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">lists</span>" <span class="xmlverb-attr-name">as</span>="<span class="xmlverb-attr-content">element()*</span>"&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e418">persName</a></span> /&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e420">placeName</a></span> /&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e422">roleName</a></span> /&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e424">measure</a></span> /&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e426">date</a></span> /&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e429">orgName</a></span> /&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;/<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name">variable</span>&gt;<span class="xmlverb-text"><br></br>
+        <br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> EN: Information about EVT </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;!--<span class="xmlverb-comment"> IT: Informazioni su EVT  </span>--&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name"><a name="d22e436">param</a></span> <span class="xmlverb-attr-name">name</span>="<span class="xmlverb-attr-content">evtTxt</span>"&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e438">p</a></span>&gt;<span class="xmlverb-text">EVT (Edition Visualization Technology) is a software for creating and browsing digital editions of manuscripts<br></br>
+                        based on text encoded according to the TEI XML schemas and Guidelines. This tool was born as part of the DVB<br></br>
+                        (Digital Vercelli Book) project in order to allow the creation of a digital edition of the Vercelli Book, a<br></br>
+                        parchment codex of the late tenth century, now preserved in the Archivio e Biblioteca Capitolare of Vercelli<br></br>
+                        and regarded as one of the four most important manuscripts of the Anglo-Saxon period as regards the transmission<br></br>
+                        of poetic texts in the Old English language.<br></br>
+                </span>&lt;/<span class="xmlverb-element-name">p</span>&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e441">p</a></span>&gt;<span class="xmlverb-text">To ensure that it will be working on all the most recent web browsers, and for as long as possible on the World<br></br>
+                        Wide Web itself, EVT is built on open and standard web technologies such as HTML, CSS and JavaScript. Specific<br></br>
+                        features, such as the magnifying lens, are entrusted to jQuery plugins, again chosen among the open source and<br></br>
+                        best supported ones to reduce the risk of future incompatibilities. The general architecture of the software,<br></br>
+                        in any case, is modular, so that any component which may cause trouble or turn out to be not completely up to<br></br>
+                        the task can be replaced easily.</span>&lt;/<span class="xmlverb-element-name">p</span>&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e444">p</a></span>&gt;<span class="xmlverb-text">For more information about how to use and/or customize EVT please refer to the EVT Manual included in the<br></br>
+                        archive you downloaded, in the "doc" folder.</span>&lt;/<span class="xmlverb-element-name">p</span>&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e447">p</a></span>&gt;<span class="xmlverb-text">EVT is used in the following projects:</span>&lt;/<span class="xmlverb-element-name">p</span>&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e450">ul</a></span>&gt;<span class="xmlverb-text"><br></br>
+                        </span>&lt;<span class="xmlverb-element-name"><a name="d22e452">li</a></span>&gt;&lt;<span class="xmlverb-element-name"><a name="d22e453">a</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">http://pelavicino.labcd.unipi.it/</span>" <span class="xmlverb-attr-name">target</span>="<span class="xmlverb-attr-content">blank</span>"&gt;<span class="xmlverb-text">Codice Pelavicino Digitale</span>&lt;/<span class="xmlverb-element-name">a</span>&gt;&lt;/<span class="xmlverb-element-name">li</span>&gt;<span class="xmlverb-text"><br></br>
+                        </span>&lt;<span class="xmlverb-element-name"><a name="d22e456">li</a></span>&gt;&lt;<span class="xmlverb-element-name"><a name="d22e457">a</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">http://vbd.humnet.unipi.it/</span>" <span class="xmlverb-attr-name">target</span>="<span class="xmlverb-attr-content">blank</span>"&gt;<span class="xmlverb-text">Vercelli Book Digitale</span>&lt;/<span class="xmlverb-element-name">a</span>&gt;&lt;/<span class="xmlverb-element-name">li</span>&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;/<span class="xmlverb-element-name">ul</span>&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e462">p</a></span>&gt;<span class="xmlverb-text">EVT has a home page in the </span>&lt;<span class="xmlverb-element-name"><a name="d22e464">a</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">https://sourceforge.net/p/evt-project/</span>" <span class="xmlverb-attr-name">target</span>="<span class="xmlverb-attr-content">blank</span>"&gt;<span class="xmlverb-text">SourceForge</span>&lt;/<span class="xmlverb-element-name">a</span>&gt;<span class="xmlverb-text"> repository,<br></br>
+                        but development is done on Gitlab and Github: if you are interested in learning more about EVT and/or<br></br>
+                        in adapting it to your specific needs please contact the project Director, Roberto Rosselli Del Turco<br></br>
+                        </span>&lt;<span class="xmlverb-element-name"><a name="d22e467">a</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">mailto:roberto.rossellidelturco@gmail.com</span>" <span class="xmlverb-attr-name">target</span>="<span class="xmlverb-attr-content">_top</span>"&gt;<span class="xmlverb-text">roberto.rossellidelturco@gmail.com</span>&lt;/<span class="xmlverb-element-name">a</span>&gt;<span class="xmlverb-text">.</span>&lt;/<span class="xmlverb-element-name">p</span>&gt;<span class="xmlverb-text"><br></br>
+                </span>&lt;<span class="xmlverb-element-name"><a name="d22e471">p</a></span>&gt;<span class="xmlverb-text">If you have any suggestions or spot an error/bug please contact us at </span>&lt;<span class="xmlverb-element-name"><a name="d22e473">a</a></span> <span class="xmlverb-attr-name">href</span>="<span class="xmlverb-attr-content">mailto:evt.developers@gmail.com</span>"&gt;<span class="xmlverb-text">evt.developers@gmail.com</span>&lt;/<span class="xmlverb-element-name">a</span>&gt;&lt;/<span class="xmlverb-element-name">p</span>&gt;<span class="xmlverb-text"><br></br>
+        </span>&lt;/<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name">param</span>&gt;<span class="xmlverb-text"><br></br>
+</span>&lt;/<span class="xmlverb-element-nsprefix">xsl</span>:<span class="xmlverb-element-name">stylesheet</span>&gt;<br></br>
+</div>
+</tt><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>v
+         </body></html>

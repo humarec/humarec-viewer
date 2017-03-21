@@ -284,7 +284,7 @@
 	<!-- EN: On/Off Document Navigation -->
 	<!-- IT: Attiva/Disattiva navigazione per documento -->
 	<!-- default: false() -->
-	<xsl:param name="document_navigation" select="true()"/>
+	<xsl:param name="document_navigation" select="false()"/>
 	
 	<!-- LISTS -->
 	
@@ -310,7 +310,7 @@
 			 Per rimuovere un elemento basta eliminare tutto l'elemento di interesse.
 			 Per aggiungere un elemento alla lista basta sapere che il tag fa riferimento alla classe data all'elemento html con il quale sono state marcate le parole "particolari" da selezionare. -->
 	<xsl:variable name="lists" as="element()*">
-	<!--	<persName/>
+		<!--<persName/>
 		<placeName/>
 		<roleName/>
 		<measure/>

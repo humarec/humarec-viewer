@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="ReText 5.3.1">
+</head>
+<body>
+<h6></h6>
+<h2>EVT 1.2 - RELEASE NOTES</h2>
+<h6></h6>
+<ul>
+<li>
+<p>Added support for integrations and editorial additions encoded with <code>&lt;supplied&gt;</code>, with particular attention to omissions (<code>@reason="omitted"</code>) and illegible text (<code>@reason="illegible"</code>);</p>
+</li>
+<li>
+<p>Added support for columns breaks (<code>&lt;cb&gt;</code>) and tables (<code>&lt;table&gt;</code>);</p>
+</li>
+<li>
+<p>Added support for <code>&lt;note&gt;</code>s that are not inline and are referenced in the text one or more times with the element <code>&lt;ptr/&gt;</code>;</p>
+</li>
+<li>
+<p>Added support for <code>&lt;ref&gt;</code>s whose <code>@target</code> attribute refers to a web page;</p>
+</li>
+<li>
+<p>Many bugs fixed!  </p>
+</li>
+</ul>
+<h6></h6>
+<h2>EXAMPLES</h2>
+<h6></h6>
+<ul>
+<li>With this release we provide three different examples. The first one is the one that has already been transformed. If you want to have a look at the other examples you have to rename the corresponding configuration file as "evt_builder-config.xsl" and perfom a new transformation of the XML source file, following the instruction contained in the documentation.
+(NB: remember to add a "_default" suffix to the current configuration file, in order to avoid losing the default configurations!).  </li>
+</ul>
+<h4>EXAMPLE 1 : Excerpt from Codice Pelavicino Digitale</h4>
+<pre><code>XML file: input_data/text/CodicePelavicino.xml
+Config file: config/evt_builder-config_CP.xsl
+</code></pre>
+<h4>EXAMPLE 2 : Excerpt from The Digital Vercelli Book</h4>
+<pre><code>XML file: input_data/text/DOTR.xml
+Config file: config/evt_builder-config_DOTR.xsl
+</code></pre>
+<h4>EXAMPLE 3 : Mixed examples of TEI Embedded Transcription</h4>
+<pre><code>XML file: input_data/text/ET_mixedExamples.xml
+Config file: config/evt_builder-config_ET_mixedExamples.xsl
+</code></pre>
+</body>
+</html>
